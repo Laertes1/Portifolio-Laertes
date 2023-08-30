@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Sora:wght@700&display=swap');
+
+:root{
+    --font-inter:'Inter', sans-serif;
+    --font-sora: 'Sora', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--neutral-900, #171717);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.box2{
+    display: flex;
+    align-items: center;
+    gap: 53.68px;
+}
+.box2-box1{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-family: var(--font-inter);
+    color: var(--neutral-50, #FAFAFA);
+    /* 18 - Paragraph Default */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; 
+}
+
+
+/*-----Main-----*/
+    main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 227px;
+    }
+/*------Textos-----*/
+.title{
+    color: var(--neutral-50, #FAFAFA);
+
+    /* H3 - Sora */
+    font-family: var(--font-sora);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 125% */
+    letter-spacing: -1px;
+}
+.main-sec1-div1-h4{
+    color: var(--purple-300, #C4B5FD);
+
+    /* H4 - Sora */
+    font-family: Sora;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 150% */
+    letter-spacing: -0.5px;
+}
+.main-sec1-div2-paragraph{
+    color: var(--neutral-100, #F5F5F5);
+    font-family: var(--font-inter);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 150% */
+    letter-spacing: -0.25px;
+}
+/*------------------------*/
+/*-----IMG-----*/
+.main-image{
+    width: 528.372px;
+    height: 557.574px;
+    transform: rotate(0.53deg);
+    flex-shrink: 0;
+}
