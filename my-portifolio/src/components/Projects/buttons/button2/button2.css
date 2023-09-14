@@ -1,0 +1,15 @@
+.button2{
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--neutral-500, #737373);
+    text-align: center;
+    width: 111px;
+    height: 44px;
+    background: var(--neutral-900, #171717);
+    color: #fff;
+    font-family: var(--font-inter);
+    transition: 0.5s;
+}
+.button2:hover{
+    background: var(--neutral-700, #404040);
+}

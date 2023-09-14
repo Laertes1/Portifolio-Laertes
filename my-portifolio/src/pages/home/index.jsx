@@ -1,34 +1,22 @@
-
-import { AiOutlineArrowDown } from "react-icons/ai"; 
 import './index.css'
-import lua from '../../assets/icons/noBackGround/moon.svg'
-import logo from '../../assets/icons/noBackGround/ns..svg'
-
+import '../../components/root/root.css'
+import NavBar from '../../components/NavBar/NavBar'
+import Projects from '../../components/Projects/projects'
 import Image from '../../assets/Vector.svg'
+import projectTest from '../../assets/captura.png'
+
 /*----Icons----*/
 import gitHubIcon from '../../assets/icons/black/BsGithub.svg'
 import linkedin from '../../assets/icons/black/BsLinkedin.svg'
-
+import  ArrowDown  from '../../assets/icons/noBackGround/Icon=arrow-down, Theme=dark, State=default.svg'
+/*-----Icons------*/
+import js from '../../assets/icons/noBackGround/Icon=javascript, Theme=dark, State=default.svg'
+import react from '../../assets/icons/noBackGround/Icon=react, Theme=dark, State=default.svg'
 export default function Index(){
     return (
       <>
-        {/*--------Nav Bar-----*/}
-        <nav>
-          <div className="box1">
-            <img src={logo} alt="logo" className="logo" />
-          </div>
-          <section className="box2">
-            <div className="box2-box1">
-              <p className="navBar-p p1">Home</p>
-              <p className="navBar-p p2">Projects</p>
-              <p className="navBar-p p3">About</p>
-              <p className="navBar-p p4">Resume</p>
-            </div>
-            <div className="box2 box1">
-              <img src={lua} alt="icone da lua" className="lua" />
-            </div>
-          </section>
-        </nav>
+        {/*-----NavBar-----*/}
+        <NavBar />
         {/*-----Home----*/}
         <main>
           <section className="section-pincipal">
@@ -44,23 +32,33 @@ export default function Index(){
               </div>
               <div className="main-sec1-div3">
                 <span className="main-sec1-div3-box">
-                  <a href="https://github.com/Laertes1" className="a-icon" target="_blank" rel="noopener noreferrer">
-                  <span className="box-gitIcon">
-                    <img
-                      src={gitHubIcon}
-                      alt="Icone Git Hub"
-                      className="gitIcon"
-                    />
-                  </span>
+                  <a
+                    href="https://github.com/Laertes1"
+                    className="a-icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="box-gitIcon">
+                      <img
+                        src={gitHubIcon}
+                        alt="Icone Git Hub"
+                        className="gitIcon"
+                      />
+                    </span>
                   </a>
-                  <a href="https://www.linkedin.com/in/laertes-angelo-b5b618235/" className="box-icon" target="_blank" rel="noopener noreferrer">
-                  <span className="box-linkedinIcon">
-                    <img
-                      src={linkedin}
-                      alt="icon linkedin"
-                      className="linkedinIcon"
-                    />
-                  </span>
+                  <a
+                    href="https://www.linkedin.com/in/laertes-angelo-b5b618235/"
+                    className="box-icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="box-linkedinIcon">
+                      <img
+                        src={linkedin}
+                        alt="icon linkedin"
+                        className="linkedinIcon"
+                      />
+                    </span>
                   </a>
                 </span>
                 <span className="main-sec1-div3-box2">
@@ -77,9 +75,39 @@ export default function Index(){
               </div>
             </section>
             <span className="box-scroll">
-                <p className="p-scroll">Scroll</p>
-                <AiOutlineArrowDown />
+              <p className="p-scroll">Scroll</p>
+              <img
+                src={ArrowDown}
+                alt="Seta Para Baixo"
+                className="arrowDown"
+              />
             </span>
+          </section>
+
+          <section className="projects">
+            <div className="projects-container1">
+              <h3 className="projects-container1-title">Projects</h3>
+            </div>
+            <div className="projects-container2">
+              <Projects
+              projectImage={projectTest}
+              title="Project Title"
+              description="Project Description"
+              icon1={js}
+              icon2={react}
+              icon3={js}
+              icon4={react}
+              />
+               <Projects
+              projectImage={projectTest}
+              title="Project Title"
+              description="Project Description"
+              icon1={js}
+              icon2={react}
+              icon3={js}
+              icon4={react}
+              />
+            </div>
           </section>
         </main>
       </>

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Sora:wght@700&display=swap');
+
+:root{
+    --font-inter:'Inter', sans-serif;
+    --font-sora: 'Sora', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: var(--neutral-900, #171717);
+}
