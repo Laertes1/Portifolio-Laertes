@@ -52,6 +52,7 @@
     font-weight: 400;
     line-height: 36px; /* 150% */
     letter-spacing: -0.25px;
+    width: 663px;
 }
 .main-sec1-div3{
     display: flex;
@@ -61,19 +62,7 @@
 }
 /*---------Final-Textos---------*/
 /*-----Icon-----*/
-.box-gitIcon,.box-linkedinIcon{
-    border-radius: 5px;
-    background: var(--purple-200, #DDD6FE);
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;    
-    justify-content: center;
-    transition: 0.5s;
-}
-.box-gitIcon:hover,.box-linkedinIcon:hover{
-    background: var(--neutral-50, #FAFAFA);
-}
+
 /*-----IMG-----*/
 .main-image{
     width: 398.372px;
@@ -120,7 +109,7 @@
     left: 48vw;
     display: flex;
     align-items: center;flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .p-scroll{
     color: var(--neutral-300, #D4D4D4);
@@ -151,10 +140,95 @@
     font-family: var(--font-sora);
     color: var(--neutral-50, #FAFAFA);
 }
-.projects-container2{
+.projects-container3{
     display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 98vw;
+    margin: 103px 0px 0px 0px;
+}
+.projects-container3-box1,.projects-container3-box2{
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 56px;
-    margin: 114px 0px 0px 0px;
+    gap: 20px;
+}
+
+/*-----AboutMe-----*/
+.aboutMe{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 125px;
+    justify-content: center;
+    margin: 157px 0px 0px 0px;
+}
+.aboutMe-container1{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 19px;
+}
+.aboutMe-container1-title{
+    color: var(--neutral-50, #FAFAFA);
+
+    /* H4 - Sora */
+    font-family: var(--font-sora);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 150% */
+    letter-spacing: -0.5px;
+}
+.aboutMe-container1-description{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.aboutMe-container1-description-text{
+    color: var(--neutral-200, #E5E5E5);
+
+    /* 24 - Paragraph Regular */
+    font-family: var(--font-inter);
+    font-size: 19px;
+    font-style: normal;
+    line-height: 36px; /* 150% */
+    letter-spacing: -0.25px;
+    width: 509px;
+}
+.aboutMe-container1-readMore{
+    border-radius: 5px;
+    border: none;
+    background: var(--purple-200, #DDD6FE);
+    transition: 0.5s;
+    font-size: 14px;
+    font-family: var(--font-inter);
+    width: 118px;
+    height: 44px;
+    margin: 13px 0px 0px 0px;
+}
+.aboutMe-container1-readMore:hover{
+    background: var(--neutral-50, #FAFAFA);
+}
+.aboutMe-container2{
+    width: 410px;
+    height: 536px;
+    display: flex;
+    align-items: center;
+}
+.aboutMe-container2::after{
+    width: 369px;
+    height: 500px;
+    border-radius: 5px;
+    background: var(--purple-300, #C4B5FD);
+    content: '';
+    margin: 0px 0px 36px 41px;
+}
+.MyImage{
+    position: absolute;
+    margin: 36px 41px 0px 0px;
+    width: 369px;
+    height: 500px;
+    border-radius: 5px;
 }

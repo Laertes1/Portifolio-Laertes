@@ -1,17 +1,21 @@
 import './index.css'
+/*-----Components-----*/
 import '../../components/root/root.css'
 import NavBar from '../../components/NavBar/NavBar'
 import Projects from '../../components/Projects/projects'
+import Footer from '../../components/Footer/Footer'
+/*-----Images-----*/
 import Image from '../../assets/Vector.svg'
 import projectTest from '../../assets/captura.png'
-
+import  MyPhoto from '../../assets/minhaFoto.jpg'
 /*----Icons----*/
-import gitHubIcon from '../../assets/icons/black/BsGithub.svg'
-import linkedin from '../../assets/icons/black/BsLinkedin.svg'
 import  ArrowDown  from '../../assets/icons/noBackGround/Icon=arrow-down, Theme=dark, State=default.svg'
 /*-----Icons------*/
 import js from '../../assets/icons/noBackGround/Icon=javascript, Theme=dark, State=default.svg'
 import react from '../../assets/icons/noBackGround/Icon=react, Theme=dark, State=default.svg'
+/*-----Buttons-----*/
+import ButtonGitHub from '../../components/Buttons/GitHubIcon/GitHubIcon'
+import ButtonLinkedin from '../../components/Buttons/LinkedinIcon/LinkedinIcon'
 export default function Index(){
     return (
       <>
@@ -27,44 +31,19 @@ export default function Index(){
               </div>
               <div className="main-sec1-div2">
                 <p className="main-sec1-div2-paragraph">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                  Olá! Sou Laertes, um desenvolvedor front-end com sólida
+                  experiência em criação de aplicações web.{" "}
                 </p>
               </div>
               <div className="main-sec1-div3">
                 <span className="main-sec1-div3-box">
-                  <a
-                    href="https://github.com/Laertes1"
-                    className="a-icon"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span className="box-gitIcon">
-                      <img
-                        src={gitHubIcon}
-                        alt="Icone Git Hub"
-                        className="gitIcon"
-                      />
-                    </span>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/laertes-angelo-b5b618235/"
-                    className="box-icon"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span className="box-linkedinIcon">
-                      <img
-                        src={linkedin}
-                        alt="icon linkedin"
-                        className="linkedinIcon"
-                      />
-                    </span>
-                  </a>
+                 <ButtonGitHub/>
+                 <ButtonLinkedin/>
                 </span>
                 <span className="main-sec1-div3-box2">
-                  <button className="btn-contato">Entrar em contato</button>
+                  <button className="btn-contato">GET IN TOUCH</button>
 
-                  <button className="btn-resume">Resume</button>
+                  <button className="btn-resume">RESUME</button>
                 </span>
               </div>
             </section>
@@ -88,28 +67,78 @@ export default function Index(){
             <div className="projects-container1">
               <h3 className="projects-container1-title">Projects</h3>
             </div>
-            <div className="projects-container2">
-              <Projects
-              projectImage={projectTest}
-              title="Project Title"
-              description="Project Description"
-              icon1={js}
-              icon2={react}
-              icon3={js}
-              icon4={react}
-              />
-               <Projects
-              projectImage={projectTest}
-              title="Project Title"
-              description="Project Description"
-              icon1={js}
-              icon2={react}
-              icon3={js}
-              icon4={react}
-              />
+            <div className="projects-container3">
+                <div className="projects-container3-box1">
+                <Projects
+                  projectImage={projectTest}
+                  title="Project Title"
+                  description="Project Description"
+                  icon1={js}
+                  icon2={react}
+                  icon3={js}
+                  icon4={react}
+                />
+                <Projects
+                  projectImage={projectTest}
+                  title="Project Title"
+                  description="Project Description"
+                  icon1={js}
+                  icon2={react}
+                  icon3={js}
+                  icon4={react}
+                />
+                </div>
+
+                <div className="projects-container3-box2">
+                <Projects
+                  projectImage={projectTest}
+                  title="Project Title"
+                  description="Project Description"
+                  icon1={js}
+                  icon2={react}
+                  icon3={js}
+                  icon4={react}
+                />
+                <Projects
+                  projectImage={projectTest}
+                  title="Project Title"
+                  description="Project Description"
+                  icon1={js}
+                  icon2={react}
+                  icon3={js}
+                  icon4={react}
+                />
+                </div>
+            </div>
+          </section>
+
+          <section className="aboutMe">
+            <div className="aboutMe-container1">
+              <h4 className="aboutMe-container1-title">Hi There!</h4>
+              <span className="aboutMe-container1-description">
+                <p className="aboutMe-container1-description-text">
+                  Olá! Sou Laertes, um desenvolvedor front-end com sólida
+                  experiência em criação de aplicações web envolvendo HTML, CSS,
+                  JavaScript, Node.js e, especialmente, React. Sou apaixonado
+                  por tecnologia e busco constantemente aprimorar minhas
+                  habilidades para oferecer soluções web excepcionais.
+                </p>
+                <p className="aboutMe-container1-description-text">
+                  Estou entusiasmado em continuar minha jornada como
+                  desenvolvedor web, sempre ansioso para absorver novas
+                  habilidades e explorar tecnologias emergentes. Agradeço pela
+                  consideração e estou pronto para contribuir para o sucesso de
+                  projetos inovadores!
+                </p>
+              </span>
+              <button className="aboutMe-container1-readMore">READ MORE</button>
+            </div>
+            <div className="aboutMe-container2">
+              <img src={MyPhoto} alt="" className="MyImage" />
             </div>
           </section>
         </main>
+        <Footer/>
       </>
     );
 }
