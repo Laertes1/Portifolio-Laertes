@@ -1,7 +1,20 @@
-import Index from "../src/pages/home/index"
+/*-----Home-----*/
+import Home from "./pages/home/index";
+/*-----Routers-----*/
+import Routers from "./components/Routers/Routers";
+/*-----NavBar-----*/
+import NavBar from "./components/NavBar/NavBar";
+/*-----Footer-----*/
+import Footer from "./components/Footer/Footer";
+import AboutMe from "./pages/AboutMe/AboutMe";
+
 function App() {
   return (
-   <Index/>
+    <>
+      <NavBar/>
+      <Routers/>
+      <Footer/>
+    </>
   );
 }
 

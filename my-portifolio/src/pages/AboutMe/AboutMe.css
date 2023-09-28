@@ -1,0 +1,81 @@
+
+.AboutMe,.AboutMe-container1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.AboutMe-container1-boxTitle{
+    padding: 103px 0px 91px 0px ;
+}
+h1{
+    color: var(--neutral-50, #FAFAFA);
+
+    /* H3 - Sora */
+    font-family: var(--font-sora);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 125% */
+    letter-spacing: -1px;
+}
+.AboutMe-container1-box2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap:45px;
+}
+.MyIMAGE{
+    width: 415px;
+    height: 538px;  
+}
+
+h4{
+    color: #FFF;
+
+    /* H4 - Sora */
+    font-family: var(--font-sora);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 150% */
+    letter-spacing: -0.5px;
+}
+p{  
+    color: var(--neutral-100, #F5F5F5);
+
+    font-family: var(--font-inter);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+}
+.AboutMe-container1-box2-boxDescription-description{
+    width: 542px;
+}
+/*------Skills------*/
+.AboutMe-container2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 170px 0px 0px 0px;
+}
+.AboutMe-container2-box1{
+    padding: 0px 0px 37px 0px;
+}
+.AboutMe-container2-box2{
+    width: 861px;
+}
+.AboutMe-container2-box3{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+    padding: 36px 0px 0px 0px;
+}
+.AboutMe-container2-box3-skills{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+

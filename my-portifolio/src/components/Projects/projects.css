@@ -6,7 +6,7 @@
     height: 545px;
     border: 1px solid var(--neutral-600, #525252);
     border-radius: 2px;
-    gap: 24px;
+    gap: 19 px;
     margin-left: 20px ;
 }
 .projects-container2-box1-box{
@@ -23,7 +23,7 @@
 .projects-container2-box-contents2{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 5px;
 }
 .projects-container2-box-contents2-title{
     color: #fff;
@@ -39,4 +39,9 @@
     align-items: center;
     flex-direction: row;
     gap: 20px;
+}
+.icon{
+    width: 44px;
+    height: 44px;
+    
 }
