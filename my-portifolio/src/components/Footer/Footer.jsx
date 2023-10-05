@@ -10,13 +10,13 @@ import ArrowUp from "../../assets/icons/noBackGround/Icon=arrow-up, Theme=dark, 
 
 export default function Footer() {
   /*----Scrollar Para Cima-----*/
-  const scroolToTop = () =>{
+  const scroolToTop = () => {
     window.scroll({
       top: 0,
       left: 0,
       behavior: "smooth",
     });
-  }
+  };
   return (
     <>
       <footer>

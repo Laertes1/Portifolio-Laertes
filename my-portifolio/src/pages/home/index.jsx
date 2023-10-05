@@ -4,23 +4,25 @@ import "../../components/root/root.css";
 import Projects from "../../components/Projects/projects";
 /*-----Images-----*/
 import Image from "../../assets/Vector.svg";
-import projectTest from "../../assets/captura.png";
 import MyPhoto from "../../assets/minhaFoto.jpg";
+/*------Images From Projects-----*/
+import Calculator from "../../assets/Calculadora.png";
 /*----Icons----*/
 import ArrowDown from "../../assets/icons/noBackGround/Icon=arrow-down, Theme=dark, State=default.svg";
 /*-----Icons------*/
 import js from "../../assets/icons/noBackGround/Icon=javascript, Theme=dark, State=default.svg";
 import react from "../../assets/icons/noBackGround/Icon=react, Theme=dark, State=default.svg";
+import css from "../../assets/icons/noBackGround/Icon=css, Theme=dark, State=default.svg"
+import html from "../../assets/icons/noBackGround/Icon=html, Theme=dark, State=default.svg"
+
 /*-----Buttons-----*/
 import ButtonGitHub from "../../components/Buttons/GitHubIcon/GitHubIcon";
 import ButtonLinkedin from "../../components/Buttons/LinkedinIcon/LinkedinIcon";
 /*-----React Link-----*/
 import { Link } from "react-router-dom";
- export default function Index() {
+export default function Index() {
   return (
     <>
-      
-      
       {/*-----Home----*/}
       <main>
         <section className="section-pincipal">
@@ -31,7 +33,8 @@ import { Link } from "react-router-dom";
             </div>
             <div className="main-sec1-div2">
               <p className="main-sec1-div2-paragraph">
-              Hello! I'm Laertes, a front-end developer with solid experience in creating web applications.{" "}
+                Hello! I'm Laertes, a front-end developer with solid experience
+                in creating web applications.{" "}
               </p>
             </div>
             <div className="main-sec1-div3">
@@ -58,23 +61,23 @@ import { Link } from "react-router-dom";
           </span>
         </section>
 
-        <section className="projects" >
+        <section className="projects" name="scroolToProject">
           <div className="projects-container1">
             <h3 className="projects-container1-title">Projects</h3>
           </div>
           <div className="projects-container3">
             <div className="projects-container3-box1">
               <Projects
-                projectImage={projectTest}
-                title="Project Title"
-                description="Project Description"
+                projectImage={Calculator}
+                title="Calculator"
+                description="This is a calculator to test my knowledge."
                 icon1={js}
-                icon2={react}
-                icon3={js}
-                icon4={react}
+                icon2={html}
+                icon3={css}
+                icon4={js}
               />
               <Projects
-                projectImage={projectTest}
+                projectImage={Calculator}
                 title="Project Title"
                 description="Project Description"
                 icon1={js}
@@ -86,7 +89,7 @@ import { Link } from "react-router-dom";
 
             <div className="projects-container3-box2">
               <Projects
-                projectImage={projectTest}
+                projectImage={Calculator}
                 title="Project Title"
                 description="Project Description"
                 icon1={js}
@@ -95,7 +98,7 @@ import { Link } from "react-router-dom";
                 icon4={react}
               />
               <Projects
-                projectImage={projectTest}
+                projectImage={Calculator}
                 title="Project Title"
                 description="Project Description"
                 icon1={js}
@@ -112,20 +115,28 @@ import { Link } from "react-router-dom";
             <h4 className="aboutMe-container1-title">Hi There!</h4>
             <span className="aboutMe-container1-description">
               <p className="aboutMe-container1-description-text">
-              Hi, I'm Laertes, a passionate front-end developer with a diverse set of skills that combine to create exceptional web experiences. With a special focus on React.js, HTML, CSS, Node.js and a keen eye for UI/UX details, I'm prepared to transform your ideas into stunning web interfaces.
+                Hi, I'm Laertes, a passionate front-end developer with a diverse
+                set of skills that combine to create exceptional web
+                experiences. With a special focus on React.js, HTML, CSS,
+                Node.js and a keen eye for UI/UX details, I'm prepared to
+                transform your ideas into stunning web interfaces.
               </p>
               <p className="aboutMe-container1-description-text">
-              I am committed to creating digital solutions that not only meet technical needs but also stand out in terms of design and usability. Delivering clean code and a responsive website.
+                I am committed to creating digital solutions that not only meet
+                technical needs but also stand out in terms of design and
+                usability. Delivering clean code and a responsive website.
               </p>
             </span>
-            <Link to="/AboutMe"> <button className="aboutMe-container1-readMore">READ MORE</button></Link>
+            <Link to="/AboutMe">
+              {" "}
+              <button className="aboutMe-container1-readMore">READ MORE</button>
+            </Link>
           </div>
           <div className="aboutMe-container2">
             <img src={MyPhoto} alt="" className="MyImage" />
           </div>
         </section>
       </main>
-      
     </>
   );
 }
