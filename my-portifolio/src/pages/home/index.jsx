@@ -37,11 +37,11 @@ export default function Index() {
           <Element className="main-sec1" name="Home">
             <div className="main-sec1-div1">
               <h3 className="title">Hello, i am Laertes</h3>
-              <h4 className="main-sec1-div1-h4">Front-end Developer</h4>
+              <h4 className="main-sec1-div1-h4">Full-Stack Developer</h4>
             </div>
             <div className="main-sec1-div2">
               <p className="main-sec1-div2-paragraph">
-                Hello! I'm Laertes, a front-end developer with solid experience
+                Hello! I'm Laertes, a full-stack developer with solid experience
                 in creating web applications.{" "}
               </p>
             </div>
@@ -131,7 +131,7 @@ export default function Index() {
             <h4 className="aboutMe-container1-title">Hi There!</h4>
             <span className="aboutMe-container1-description">
               <p className="aboutMe-container1-description-text">
-                Hi, I'm Laertes, a passionate front-end developer with a diverse
+                Hi, I'm Laertes, a passionate full-stack developer with a diverse
                 set of skills that combine to create exceptional web
                 experiences. With a special focus on React.js, HTML, CSS,
                 Node.js and a keen eye for UI/UX details, I'm prepared to

@@ -43,6 +43,7 @@ label{
     align-items: flex-start;
     flex-direction: column;
     margin: 24px 0px 0px 0px;
+    width: 690px;
 }
 .form-message{
     width: 660px;
@@ -61,12 +62,12 @@ label{
     align-items: center;
 }
 .form-boxSendEmail-sendMessage{
-    width: 155px;
+    width: 255px;
     height: 35px;
     margin: 6px 0px 0px 0px;  
     background-color: var(--black);
     border: 1px solid var(--neutral-500);
-    border-radius: 7px;
+    border-radius: 20px;
     font-family: var(--font-inter);
     color: var(--neutral-50);
     transition: 0.5s;
