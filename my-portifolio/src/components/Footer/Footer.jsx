@@ -1,13 +1,13 @@
 import React from "react";
 import "./Fotter.css";
-import "../root/root.css";
 /*----Buttons----*/
 import GitHubIcon from "../Buttons/GitHubIcon/GitHubIcon";
 import LinkedinIcon from "../Buttons/LinkedinIcon/LinkedinIcon";
 import Email from "../Buttons/Email/Email";
 /*-----Icons----*/
 import ArrowUp from "../../assets/icons/noBackGround/Icon=arrow-up, Theme=dark, State=default.svg";
-
+/*-----React Scroll-----*/
+import { Element } from "react-scroll";
 export default function Footer() {
   /*----Scrollar Para Cima-----*/
   const scroolToTop = () => {
@@ -19,7 +19,7 @@ export default function Footer() {
   };
   return (
     <>
-      <footer>
+      <Element className="footer" name="Footer">
         <section className="footer-container1">
           <div className="footer-container1-box1">
             <h5 className="footer-container1-box1-title">Let’s connect</h5>
@@ -53,7 +53,7 @@ export default function Footer() {
             © Coded by Laertes Angelo 💜{" "}
           </p>
         </section>
-      </footer>
+      </Element>
     </>
   );
 }

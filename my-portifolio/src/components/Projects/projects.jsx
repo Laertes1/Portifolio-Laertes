@@ -1,6 +1,5 @@
 import React from "react";
 import "../Projects/projects.css";
-import "../root/root.css";
 
 /*-----Buttons-----*/
 import Button1 from "../Projects/buttons/button1/button1";

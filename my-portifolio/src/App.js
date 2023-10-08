@@ -1,20 +1,18 @@
-/*-----Home-----*/
-import Home from "./pages/home/index";
 /*-----Routers-----*/
 import Routers from "./components/Routers/Routers";
 /*-----NavBar-----*/
 import NavBar from "./components/NavBar/NavBar";
 /*-----Footer-----*/
 import Footer from "./components/Footer/Footer";
-import AboutMe from "./pages/AboutMe/AboutMe";
-
+import EmailJs from "./components/Emailjs/EmailJs"
 function App() {
   return (
     <>
-      <NavBar/>
-      <Routers/>
-      <Footer/>
-    </>
+        <NavBar />
+       {/* <EmailJs/> */} 
+                  <Routers/>
+          <Footer />
+     </>
   );
 }
 

@@ -1,6 +1,4 @@
 import React from "react";
-/*-----Root-----*/
-import "../../components/root/root.css";
 import "./AboutMe.css";
 /*-----Image-----*/
 import MyImage from "../../assets/minhaFoto.jpg";
@@ -23,7 +21,7 @@ export default function AboutMe() {
             </div>
             <div className="AboutMe-container1-box2">
               <span className="AboutMe-container1-box2-boxImage">
-                <img src={MyImage} alt="" className="MyIMAGE"/>
+                <img src={MyImage} alt="" className="MyIMAGE" />
               </span>
               <span className="AboutMe-container1-box2-boxDescription">
                 <h4>Quote...</h4>
@@ -31,20 +29,19 @@ export default function AboutMe() {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Ratione quia fugit cum facilis libero similique nobis, ut
                   consectetur perspiciatis vel doloribus quae omnis adipisci,
-                  repellendus autem in voluptatem aliquid assumenda.               
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ratione quia fugit cum facilis libero similique nobis, ut
-                  consectetur perspiciatis vel doloribus quae omnis adipisci,
-                  repellendus autem in voluptatem aliquid assumenda.
-
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ratione quia fugit cum facilis libero similique nobis, ut
-                  consectetur perspiciatis vel doloribus quae omnis adipisci,
-                  repellendus autem in voluptatem aliquid assumenda.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ratione quia fugit cum facilis libero similique nobis, ut
-                  consectetur perspiciatis vel doloribus quae omnis adipisci,
-                  repellendus autem in voluptatem aliquid assumenda.
+                  repellendus autem in voluptatem aliquid assumenda. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Ratione quia
+                  fugit cum facilis libero similique nobis, ut consectetur
+                  perspiciatis vel doloribus quae omnis adipisci, repellendus
+                  autem in voluptatem aliquid assumenda. Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Ratione quia fugit cum
+                  facilis libero similique nobis, ut consectetur perspiciatis
+                  vel doloribus quae omnis adipisci, repellendus autem in
+                  voluptatem aliquid assumenda. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Ratione quia fugit cum facilis
+                  libero similique nobis, ut consectetur perspiciatis vel
+                  doloribus quae omnis adipisci, repellendus autem in voluptatem
+                  aliquid assumenda.
                 </p>
               </span>
             </div>

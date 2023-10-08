@@ -1,7 +1,8 @@
+import React from "react";
 import "./index.css";
 /*-----Components-----*/
-import "../../components/root/root.css";
 import Projects from "../../components/Projects/projects";
+import EmailJs from "../../components/Emailjs/EmailJs"
 /*-----Images-----*/
 import Image from "../../assets/Vector.svg";
 import MyPhoto from "../../assets/minhaFoto.jpg";
@@ -12,21 +13,28 @@ import ArrowDown from "../../assets/icons/noBackGround/Icon=arrow-down, Theme=da
 /*-----Icons------*/
 import js from "../../assets/icons/noBackGround/Icon=javascript, Theme=dark, State=default.svg";
 import react from "../../assets/icons/noBackGround/Icon=react, Theme=dark, State=default.svg";
-import css from "../../assets/icons/noBackGround/Icon=css, Theme=dark, State=default.svg"
-import html from "../../assets/icons/noBackGround/Icon=html, Theme=dark, State=default.svg"
-
+import css from "../../assets/icons/noBackGround/Icon=css, Theme=dark, State=default.svg";
+import html from "../../assets/icons/noBackGround/Icon=html, Theme=dark, State=default.svg";
 /*-----Buttons-----*/
 import ButtonGitHub from "../../components/Buttons/GitHubIcon/GitHubIcon";
 import ButtonLinkedin from "../../components/Buttons/LinkedinIcon/LinkedinIcon";
 /*-----React Link-----*/
 import { Link } from "react-router-dom";
+/*-----React Scroll-----*/
+import { Element } from "react-scroll";
+/*-----Scroll To Top-----*/
+import ScrollToTop from "../../components/scrollToTop/scrollToTop"
+/*------React Scroll-----*/
+const Scroll = require('react-scroll');
+const ScrollLink = Scroll.Link;
 export default function Index() {
+
   return (
     <>
       {/*-----Home----*/}
       <main>
         <section className="section-pincipal">
-          <section className="main-sec1">
+          <Element className="main-sec1" name="Home">
             <div className="main-sec1-div1">
               <h3 className="title">Hello, i am Laertes</h3>
               <h4 className="main-sec1-div1-h4">Front-end Developer</h4>
@@ -43,12 +51,20 @@ export default function Index() {
                 <ButtonLinkedin />
               </span>
               <span className="main-sec1-div3-box2">
-                <button className="btn-contato">GET IN TOUCH</button>
+              <ScrollLink
+              to="formEmail"
+              spy={true}
+              smooth={true}
+              hashSpy={true}
+              offset={-80}
+              duration={500}
+              className="navBar-p p4"
+            ><button className="btn-contato">GET IN TOUCH</button></ScrollLink>
 
                 <button className="btn-resume">RESUME</button>
               </span>
             </div>
-          </section>
+          </Element>
           <section className="main-sec2">
             <div className="boxImage">
               {" "}
@@ -61,7 +77,7 @@ export default function Index() {
           </span>
         </section>
 
-        <section className="projects" name="scroolToProject">
+        <Element className="projects" name="Projects" id="Projects">
           <div className="projects-container1">
             <h3 className="projects-container1-title">Projects</h3>
           </div>
@@ -108,9 +124,9 @@ export default function Index() {
               />
             </div>
           </div>
-        </section>
+        </Element>
 
-        <section className="aboutMe">
+        <Element className="aboutMe" name="AboutMe">
           <div className="aboutMe-container1">
             <h4 className="aboutMe-container1-title">Hi There!</h4>
             <span className="aboutMe-container1-description">
@@ -128,14 +144,18 @@ export default function Index() {
               </p>
             </span>
             <Link to="/AboutMe">
-              {" "}
-              <button className="aboutMe-container1-readMore">READ MORE</button>
+              <button className="aboutMe-container1-readMore" onClick={ScrollToTop}>READ MORE</button>
             </Link>
           </div>
           <div className="aboutMe-container2">
             <img src={MyPhoto} alt="" className="MyImage" />
           </div>
+        </Element>
+        <Element name="formEmail">
+        <section className="formEmail">
+          <EmailJs/>
         </section>
+        </Element>
       </main>
     </>
   );

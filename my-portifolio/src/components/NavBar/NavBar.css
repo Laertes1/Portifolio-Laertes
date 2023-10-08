@@ -1,9 +1,17 @@
-
 nav{
+    position: fixed;
+    width: 100vw;
+    height: 66px;
+    z-index: 999;
+    background: var(--neutral-900, #171717);
+    top: 0px;
+    
+}
+.navBar-containerPrincipal{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .box2{
     display: flex;

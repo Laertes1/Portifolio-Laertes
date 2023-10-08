@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     width: 1278px;
-    margin: 80px 0px 0px 0px;
+    margin: 120px 0px 0px 0px;
     gap: 20px;
 }
 /*--------------Main-sec1---------------*/
@@ -21,7 +21,7 @@
 }
 /*------Textos-----*/
 .title{
-    color: var(--neutral-50, #FAFAFA);
+    color: var(--neutral-50);
 
     /* H3 - Sora */
     font-family: var(--font-sora);
@@ -33,10 +33,10 @@
     width: 540px;
 }
 .main-sec1-div1-h4{
-    color: var(--purple-300, #C4B5FD);
+    color: var(--purple-300);
 
     /* H4 - Sora */
-    font-family: Sora;
+    font-family: var(--font-sora);
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -90,15 +90,15 @@
     align-items: center;
     gap: 30px;
     border-radius: 5px;
-    border: 1.5px solid var(--neutral-500, #737373);
+    border: 1.5px solid var(--neutral-500);
     background-color: #fafafa00;
-    color: var(--neutral-50, #FAFAFA);
+    color: var(--neutral-50);
     transition: 0.5s;
 }
 
 .btn-contato:hover,.btn-resume:hover{
     border-radius: 5px;
-    background: var(--neutral-700, #404040);}
+    background: var(--neutral-700);}
 
 /*----------------*/
 /*-----Icone de Seta-----*/
