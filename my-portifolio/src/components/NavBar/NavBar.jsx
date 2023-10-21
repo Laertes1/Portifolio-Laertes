@@ -7,9 +7,12 @@ import logo from "../../assets/icons/noBackGround/ns..svg";
 import { Link } from "react-router-dom";
 /*-----Scroll To Top-----*/
 import ScrollToTop from "../scrollToTop/scrollToTop"
+/*-----menu Hamburguer------*/
+import Hamburguer from "../hamburguer/hamburguer"
 /*-----React Scroll-----*/
 var Scroll = require('react-scroll');
 const ScrollLink = Scroll.Link;
+
 export default function NavBar() {
    
   return (
@@ -20,8 +23,8 @@ export default function NavBar() {
         <div className="box1">
           <img src={logo} alt="logo" className="logo" />
         </div>
-        <section className="box2">
-          <div className="box2-box1">
+        <section className="navBar-box2">
+          <div className="navBar-box2-box1">
             
             <ScrollLink
               to="Home"
@@ -77,6 +80,7 @@ export default function NavBar() {
             <img src={lua} alt="icone da lua" className="lua" />
           </div>
         </section>
+        <Hamburguer/>
         </section>
       </nav>
     </>

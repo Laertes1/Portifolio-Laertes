@@ -13,12 +13,12 @@ nav{
     justify-content: space-around;
     margin-top: 20px;
 }
-.box2{
+.navBar-box2{
     display: flex;
     align-items: center;
     gap: 53.68px;
 }
-.box2-box1{
+.navBar-box2-box1{
     display: flex;
     flex-direction: row;
     gap: 30px;

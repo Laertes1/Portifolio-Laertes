@@ -10,7 +10,7 @@ export default function projects(props) {
     <>
       {/*-----Projects-----*/}
 
-      <div className="projects-container2-box1">
+      <div className="projects-container2-box                 1">
         <span className="projects-container2-box-contents1">
           <img src={props.projectImage} alt="Projeto 1" className="project1" />
         </span>

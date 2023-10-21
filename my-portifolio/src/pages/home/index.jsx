@@ -3,6 +3,7 @@ import "./index.css";
 /*-----Components-----*/
 import Projects from "../../components/Projects/projects";
 import EmailJs from "../../components/Emailjs/EmailJs"
+import Socket from "../../components/Socket/Socket"
 /*-----Images-----*/
 import Image from "../../assets/Vector.svg";
 import MyPhoto from "../../assets/minhaFoto.jpg";
@@ -68,7 +69,7 @@ export default function Index() {
           <section className="main-sec2">
             <div className="boxImage">
               {" "}
-              <img src={Image} alt="imae" className="main-image" />
+               <Socket/>
             </div>
           </section>
           <span className="box-scroll">
@@ -125,7 +126,7 @@ export default function Index() {
             </div>
           </div>
         </Element>
-
+    {/*----About Me-----*/}
         <Element className="aboutMe" name="AboutMe">
           <div className="aboutMe-container1">
             <h4 className="aboutMe-container1-title">Hi There!</h4>

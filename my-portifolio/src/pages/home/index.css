@@ -4,9 +4,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1278px;
-    margin: 120px 0px 0px 0px;
-    gap: 20px;
+    width: 100%;
+    margin: 190px 0px 0px 0px;
+    gap: 120px;
+    padding: 0px 0px 90px 0px;
 }
 /*--------------Main-sec1---------------*/
 .main-sec1{
@@ -30,7 +31,7 @@
     font-weight: 700;
     line-height: 70px; /* 125% */
     letter-spacing: -1px;
-    width: 540px;
+    width: 100%;
 }
 .main-sec1-div1-h4{
     color: var(--purple-300);
@@ -52,7 +53,7 @@
     font-weight: 400;
     line-height: 36px; /* 150% */
     letter-spacing: -0.25px;
-    width: 663px;
+    width: 99%;
 }
 .main-sec1-div3{
     display: flex;
@@ -88,6 +89,7 @@
     display: flex;
     padding: 10px 16px;
     align-items: center;
+    justify-content: center;
     gap: 30px;
     border-radius: 5px;
     border: 1.5px solid var(--neutral-500);
@@ -105,8 +107,8 @@
 
 .box-scroll{
     position: absolute;
-    top: 90vh;
-    left: 48vw;
+    top: 90%;
+    left: 48%;
     display: flex;
     align-items: center;flex-direction: column;
     justify-content: flex-end;

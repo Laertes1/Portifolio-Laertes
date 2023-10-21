@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutMe.css";
 /*-----Image-----*/
-import MyImage from "../../assets/minhaFoto.jpg";
+import MyImage from "../../components/Card Image/CardImage";
 /*-----Icons-----*/
 import HtmlIcon from "../../assets/icons/Default/Icon=html, Theme=dark, State=hover.svg";
 import CssIcon from "../../assets/icons/Default/Icon=css, Theme=dark, State=hover.svg";
@@ -21,7 +21,7 @@ export default function AboutMe() {
             </div>
             <div className="AboutMe-container1-box2">
               <span className="AboutMe-container1-box2-boxImage">
-                <img src={MyImage} alt="" className="MyIMAGE" />
+                <MyImage/>
               </span>
               <span className="AboutMe-container1-box2-boxDescription">
                 <h4>Quote...</h4>
