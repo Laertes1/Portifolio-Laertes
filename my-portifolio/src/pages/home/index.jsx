@@ -7,8 +7,11 @@ import Socket from "../../components/Socket/Socket"
 /*-----Images-----*/
 import Image from "../../assets/Vector.svg";
 import MyPhoto from "../../assets/minhaFoto.jpg";
+import GhostImage from '../../components/GhostImage/GhostImage'
 /*------Images From Projects-----*/
-import Calculator from "../../assets/Calculadora.png";
+import Calculator from "../../assets/Projects/Calculadora.png";
+import CalculatorOfGenes from '../../assets/Projects/Captura2Genes.png'
+import Crud from '../../assets/Projects/crud.png'
 /*----Icons----*/
 import ArrowDown from "../../assets/icons/noBackGround/Icon=arrow-down, Theme=dark, State=default.svg";
 /*-----Icons------*/
@@ -91,22 +94,22 @@ export default function Index() {
                 icon1={js}
                 icon2={html}
                 icon3={css}
-                icon4={js}
+                style={{opacity:'0'}}
               />
               <Projects
-                projectImage={Calculator}
-                title="Project Title"
-                description="Project Description"
-                icon1={js}
-                icon2={react}
+                projectImage={CalculatorOfGenes}
+                title="Mix of genes"
+                description="This is a gene calculator, made to mix genes."
+                icon1={html}
+                icon2={css}
                 icon3={js}
-                icon4={react}
+                style={{opacity:'0'}}
               />
             </div>
 
             <div className="projects-container3-box2">
               <Projects
-                projectImage={Calculator}
+                projectImage={Crud}
                 title="Project Title"
                 description="Project Description"
                 icon1={js}

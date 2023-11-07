@@ -27,7 +27,7 @@ export default function projects(props) {
             <img src={props.icon1} alt="icone 1" className="icon" />
             <img src={props.icon2} alt="icone 2" className="icon" />
             <img src={props.icon3} alt="icone 3" className="icon" />
-            <img src={props.icon4} alt="icone 4" className="icon" />
+            <img src={props.icon4} style={props.style} alt="icone 4" className="icon" />
           </span>
           <span className="projects-container2-box-contents4">
             <Button1 liveCode="https://github.com/Laertes1/Calculadora" />

@@ -59,34 +59,38 @@ export default function AboutMe() {
               </p>
             </div>
             <div className="AboutMe-container2-box3">
-              <span className="AboutMe-container2-box3-skills">
+              <div className="AboutMe-container2-box3-box1">
+              <span className="AboutMe-container2-box3-box1-skills">
                 <img src={HtmlIcon} alt="" />
-                <p className="AboutMe-container2-box3-skills-name">HTML5</p>
+                <p className="AboutMe-container2-box3-box1-skills-name">HTML5</p>
               </span>
-              <span className="AboutMe-container2-box3-skills"></span>
-              <span className="AboutMe-container2-box3-skills">
+              <span className="AboutMe-container2-box3-box1-skills">
                 <img src={CssIcon} alt="" />
-                <p className="AboutMe-container2-box3-skills-name">CSS3</p>
+                <p className="AboutMe-container2-box3-box1-skills-name">CSS3</p>
               </span>
-              <span className="AboutMe-container2-box3-skills">
+              <span className="AboutMe-container2-box3-box1-skills">
                 <img src={JavaScriptIcon} alt="" />
-                <p className="AboutMe-container2-box3-skills-name">
+                <p className="AboutMe-container2-box3-box1-skills-name">
                   JavaScript
                 </p>
               </span>
-              <span className="AboutMe-container2-box3-skills">
+              </div>
+              <div className="AboutMe-container2-box3-box2">
+              <span className="AboutMe-container2-box3-box2-skills react">
                 <img src={ReactIcon} alt="" />
-                <p className="AboutMe-container2-box3-skills-name">React</p>
+                <p className="AboutMe-container2-box3-box2-skills-name">React</p>
               </span>
-              <span className="AboutMe-container2-box3-skills">
+              <span className="AboutMe-container2-box3-box2-skills figma">
                 <img src={FigmaIcon} alt="" />
-                <p className="AboutMe-container2-box3-skills-name">Figma</p>
+                <p className="AboutMe-container2-box3-box2-skills-name">Figma</p>
               </span>
-              <span className="AboutMe-container2-box3-skills">
+              <span className="AboutMe-container2-box3-box2-skills github">
                 <img src={GitHubIcon} alt="" />
-                <p className="AboutMe-container2-box3-skills-name">GitHub</p>
+                <p className="AboutMe-container2-box3-box2-skills-name">GitHub</p>
               </span>
             </div>
+              </div>
+
           </section>
           <section className="AboutMe-container3"> </section>
         </section>
