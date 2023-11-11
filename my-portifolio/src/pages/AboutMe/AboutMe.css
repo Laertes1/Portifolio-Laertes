@@ -68,12 +68,15 @@ p {
 }
 
 /*------Skills------*/
+.skills{
+    width: 90%;
+}
 .AboutMe-container2 {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 170px 0px 0px 0px;
-    width: 90%;
+    width: 100%;
 }
 
 .AboutMe-container2-box1 {
@@ -113,7 +116,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 330px;
+    width: 310px;
 }
 
 .AboutMe-container2-box3-box1-skills,
@@ -123,7 +126,15 @@ p {
     flex-direction: column;
     width: 100px;
 }
-
+.AboutMe-container2-box3-box2-skills.typescript{
+    width:94px;
+    height: 60px;
+}
+.typeScript{
+    margin-top: 2px;
+    width: 34px;
+    height: 34px;
+}
 /*-------Responsividade------*/
 
 @media screen and (max-width: 960px) {
@@ -169,7 +180,7 @@ p {
 
 
     .AboutMe-container2-box3-box2 {
-        gap: 10%;
+        gap: 5%;
     }
     .AboutMe-container2 h4 {
         width: 55%;

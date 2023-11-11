@@ -4,15 +4,13 @@ import Routers from "./components/Routers/Routers";
 import NavBar from "./components/NavBar/NavBar";
 /*-----Footer-----*/
 import Footer from "./components/Footer/Footer";
-import EmailJs from "./components/Emailjs/EmailJs"
 function App() {
   return (
     <>
-        <NavBar />
-       {/* <EmailJs/> */} 
-                  <Routers/>
-          <Footer />
-     </>
+{/*       <NavBar />
+ */}      <Routers />
+      <Footer />
+    </>
   );
 }
 

@@ -2,16 +2,16 @@ import React from "react";
 import "./index.css";
 /*-----Components-----*/
 import Projects from "../../components/Projects/projects";
-import EmailJs from "../../components/Emailjs/EmailJs"
-import Socket from "../../components/Socket/Socket"
+import EmailJs from "../../components/Emailjs/EmailJs";
+import Socket from "../../components/Socket/Socket";
+//? NavBar 
+import NavBar from '../../components/NavBar/NavBar'
 /*-----Images-----*/
-import Image from "../../assets/Vector.svg";
 import MyPhoto from "../../assets/minhaFoto.jpg";
-import GhostImage from '../../components/GhostImage/GhostImage'
 /*------Images From Projects-----*/
 import Calculator from "../../assets/Projects/Calculadora.png";
-import CalculatorOfGenes from '../../assets/Projects/Captura2Genes.png'
-import Crud from '../../assets/Projects/crud.png'
+import CalculatorOfGenes from "../../assets/Projects/Captura2Genes.png";
+import Crud from "../../assets/Projects/crud.png";
 /*----Icons----*/
 import ArrowDown from "../../assets/icons/noBackGround/Icon=arrow-down, Theme=dark, State=default.svg";
 /*-----Icons------*/
@@ -19,6 +19,8 @@ import js from "../../assets/icons/noBackGround/Icon=javascript, Theme=dark, Sta
 import react from "../../assets/icons/noBackGround/Icon=react, Theme=dark, State=default.svg";
 import css from "../../assets/icons/noBackGround/Icon=css, Theme=dark, State=default.svg";
 import html from "../../assets/icons/noBackGround/Icon=html, Theme=dark, State=default.svg";
+import typescript from "../../assets/icons/noBackGround/typescript .svg";
+import nodejs from "../../assets/icons/noBackGround/node-js.svg";
 /*-----Buttons-----*/
 import ButtonGitHub from "../../components/Buttons/GitHubIcon/GitHubIcon";
 import ButtonLinkedin from "../../components/Buttons/LinkedinIcon/LinkedinIcon";
@@ -27,14 +29,24 @@ import { Link } from "react-router-dom";
 /*-----React Scroll-----*/
 import { Element } from "react-scroll";
 /*-----Scroll To Top-----*/
-import ScrollToTop from "../../components/scrollToTop/scrollToTop"
+import ScrollToTop from "../../components/scrollToTop/scrollToTop";
 /*------React Scroll-----*/
-const Scroll = require('react-scroll');
+const Scroll = require("react-scroll");
 const ScrollLink = Scroll.Link;
-export default function Index() {
 
+export default function Index() {
   return (
     <>
+        <NavBar 
+        to='Home'
+        to2="Projects"
+        to3="AboutMe"
+        to4="formEmail"
+        value1='Home'
+        value2='Projects'
+        value3='About Me'
+        value4='Talk to me'
+        />
       {/*-----Home----*/}
       <main>
         <section className="section-pincipal">
@@ -55,24 +67,29 @@ export default function Index() {
                 <ButtonLinkedin />
               </span>
               <span className="main-sec1-div3-box2">
-              <ScrollLink
-              to="formEmail"
-              spy={true}
-              smooth={true}
-              hashSpy={true}
-              offset={-80}
-              duration={500}
-              className="navBar-p p4"
-            ><button className="btn-contato">GET IN TOUCH</button></ScrollLink>
+                <ScrollLink
+                  to="formEmail"
+                  spy={true}
+                  smooth={true}
+                  hashSpy={true}
+                  offset={-80}
+                  duration={500}
+                  className="navBar-p p4"
+                >
+                  <button className="btn-contato">GET IN TOUCH</button>
+                </ScrollLink>
 
-                <button className="btn-resume">RESUME</button>
+                <Link to="/AboutMe" className="Link">
+                  {" "}
+                  <button className="btn-resume">READ MORE</button>
+                </Link>
               </span>
             </div>
           </Element>
           <section className="main-sec2">
             <div className="boxImage">
               {" "}
-               <Socket/>
+              <Socket />
             </div>
           </section>
           <span className="box-scroll">
@@ -94,7 +111,8 @@ export default function Index() {
                 icon1={js}
                 icon2={html}
                 icon3={css}
-                style={{opacity:'0'}}
+                style={{ opacity: "0" }}
+                liveCode='https://github.com/Laertes1/Calculadora.git'
               />
               <Projects
                 projectImage={CalculatorOfGenes}
@@ -103,19 +121,21 @@ export default function Index() {
                 icon1={html}
                 icon2={css}
                 icon3={js}
-                style={{opacity:'0'}}
+                style={{ opacity: "0" }}
+                liveCode='https://github.com/Laertes1/ProjetoLucas.git'
               />
             </div>
 
             <div className="projects-container3-box2">
               <Projects
                 projectImage={Crud}
-                title="Project Title"
-                description="Project Description"
+                title="Games love"
+                description="This is a full-stack game search system."
                 icon1={js}
                 icon2={react}
-                icon3={js}
-                icon4={react}
+                icon3={css}
+                icon4={nodejs}
+                liveCode='https://github.com/Laertes1/Games-for-love.git'
               />
               <Projects
                 projectImage={Calculator}
@@ -129,14 +149,14 @@ export default function Index() {
             </div>
           </div>
         </Element>
-    {/*----About Me-----*/}
+        {/*----About Me-----*/}
         <Element className="aboutMe" name="AboutMe">
           <div className="aboutMe-container1">
             <h4 className="aboutMe-container1-title">Hi There!</h4>
             <span className="aboutMe-container1-description">
               <p className="aboutMe-container1-description-text">
-                Hi, I'm Laertes, a passionate full-stack developer with a diverse
-                set of skills that combine to create exceptional web
+                Hi, I'm Laertes, a passionate full-stack developer with a
+                diverse set of skills that combine to create exceptional web
                 experiences. With a special focus on React.js, HTML, CSS,
                 Node.js and a keen eye for UI/UX details, I'm prepared to
                 transform your ideas into stunning web interfaces.
@@ -148,7 +168,12 @@ export default function Index() {
               </p>
             </span>
             <Link to="/AboutMe">
-              <button className="aboutMe-container1-readMore" onClick={ScrollToTop}>READ MORE</button>
+              <button
+                className="aboutMe-container1-readMore"
+                onClick={ScrollToTop}
+              >
+                READ MORE
+              </button>
             </Link>
           </div>
           <div className="aboutMe-container2">
@@ -156,9 +181,9 @@ export default function Index() {
           </div>
         </Element>
         <Element name="formEmail">
-        <section className="formEmail">
-          <EmailJs/>
-        </section>
+          <section className="formEmail">
+            <EmailJs />
+          </section>
         </Element>
       </main>
     </>
