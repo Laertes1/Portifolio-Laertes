@@ -1,7 +1,10 @@
 import React from 'react'
 import './GhostImage.css'
-export default function GhostImage() {
+export default function loading() {
   return (
-    <span className="GhostImage-span" style="opacity='0'"></span>
+    <>
+    <span className='loading'></span>
+
+    </>
   )
 }

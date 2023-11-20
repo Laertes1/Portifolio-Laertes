@@ -7,7 +7,7 @@ import Socket from "../../components/Socket/Socket"
 /*-----Images-----*/
 import Image from "../../assets/Vector.svg";
 import MyPhoto from "../../assets/minhaFoto.jpg";
-import GhostImage from '../../components/GhostImage/GhostImage'
+import loading from '../../assets/Projects/7331649-carregamento-lento-da-internet-bar-doodle-com-caracol-vetor.jpg'
 /*------Images From Projects-----*/
 import Calculator from "../../assets/Projects/Calculadora.png";
 import CalculatorOfGenes from '../../assets/Projects/Captura2Genes.png'
@@ -118,9 +118,9 @@ export default function Index() {
                 icon4={react}
               />
               <Projects
-                projectImage={Calculator}
-                title="Project Title"
-                description="Project Description"
+                projectImage={loading}
+                title="Project under development"
+                description="Take it easy"
                 icon1={js}
                 icon2={react}
                 icon3={js}
