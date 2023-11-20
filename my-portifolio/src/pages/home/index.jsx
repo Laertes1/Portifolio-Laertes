@@ -8,6 +8,7 @@ import Socket from "../../components/Socket/Socket";
 import NavBar from '../../components/NavBar/NavBar'
 /*-----Images-----*/
 import MyPhoto from "../../assets/minhaFoto.jpg";
+import loading from '../../assets/Projects/7331649-carregamento-lento-da-internet-bar-doodle-com-caracol-vetor.jpg'
 /*------Images From Projects-----*/
 import Calculator from "../../assets/Projects/Calculadora.png";
 import CalculatorOfGenes from "../../assets/Projects/Captura2Genes.png";
@@ -19,7 +20,7 @@ import js from "../../assets/icons/noBackGround/Icon=javascript, Theme=dark, Sta
 import react from "../../assets/icons/noBackGround/Icon=react, Theme=dark, State=default.svg";
 import css from "../../assets/icons/noBackGround/Icon=css, Theme=dark, State=default.svg";
 import html from "../../assets/icons/noBackGround/Icon=html, Theme=dark, State=default.svg";
-import typescript from "../../assets/icons/noBackGround/typescript .svg";
+// import typescript from "../../assets/icons/noBackGround/typescript .svg";
 import nodejs from "../../assets/icons/noBackGround/node-js.svg";
 /*-----Buttons-----*/
 import ButtonGitHub from "../../components/Buttons/GitHubIcon/GitHubIcon";
@@ -138,13 +139,13 @@ export default function Index() {
                 liveCode='https://github.com/Laertes1/Games-for-love.git'
               />
               <Projects
-                projectImage={Calculator}
-                title="Project Title"
-                description="Project Description"
+                projectImage={loading}
+                title="Project under development"
+                description="Take it easy"
                 icon1={js}
                 icon2={react}
-                icon3={js}
-                icon4={react}
+                icon3={css}
+                style={{ opacity: "0" }}
               />
             </div>
           </div>

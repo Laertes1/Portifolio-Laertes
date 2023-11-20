@@ -28,6 +28,12 @@ main {
 }
 
 /*-----Responsividade-----*/
+/* @media screen and (min-height:800px) {
+  .box-scroll{
+    top:80%;
+  }
+} */
+
 @media screen and (min-width:1745px) {
   .section-pincipal {
     gap: 330px;
