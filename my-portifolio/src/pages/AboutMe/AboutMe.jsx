@@ -24,25 +24,25 @@ export default function AboutMe() {
         to3="skills"
         to4="formEmail"
         value1='Home'
-        value2='Read More'
-        value3='skills'
-        value4='Talk to me'
+        value2='Mais sobre'
+        value3='Habilidades'
+        value4='Fale comigo'
         />
       <main>
         <section className="AboutMe">
       <Element  name="ReadMore">
           <section className="AboutMe-container1">
             <div className="AboutMe-container1-boxTitle">
-              <h1>About Me</h1>
+              <h1>Sobre mim</h1>
             </div>
             <div className="AboutMe-container1-box2">
               <span className="AboutMe-container1-box2-boxImage">
                 <MyImage/>
               </span>
               <span className="AboutMe-container1-box2-boxDescription">
-                <h4>More about me</h4>
+                <h4>Mais sobre mim</h4>
                 <p className="AboutMe-container1-box2-boxDescription-description">
-                Hello, I'm Laertes, a passionate full-stack developer with a diverse set of skills that come together to create exceptional web experiences. I'm ready to transform your ideas into stunning web interfaces. I also have solid knowledge in TypeScript, enabling me to develop in a more robust and secure manner, ensuring a strong foundation for the projects I undertake. My expertise extends beyond front-end and databases. In the back-end, I have experience with Express.js, a robust framework that allows me to create efficient and scalable web servers. This, combined with my knowledge of Node.js, empowers me to develop complete web solutions, from user interface to server, providing a seamless experience for end-users. I am excited to collaborate on challenging projects that demand a diverse set of skills, combining my passion for programming with a user-centered and quality-focused approach. 
+                Olá, sou Laertes, um desenvolvedor full-stack apaixonado com um conjunto diversificado de habilidades que se unem para criar experiências web excepcionais. Estou pronto para transformar suas ideias em interfaces web impressionantes. Possuo também sólidos conhecimentos em TypeScript, o que me permite desenvolver de forma mais robusta e segura, garantindo uma base sólida para os projetos que realizo. Minha experiência vai além de front-end e bancos de dados. No back-end, tenho experiência com Express.js, um framework robusto que me permite criar servidores web eficientes e escaláveis. Isso, combinado com meu conhecimento de Node.js, me permite desenvolver soluções web completas, desde a interface do usuário até o servidor, proporcionando uma experiência perfeita para os usuários finais. Estou entusiasmado em colaborar em projetos desafiadores que exigem um conjunto diversificado de habilidades, combinando minha paixão por programação com uma abordagem centrada no usuário e focada na qualidade.
                 </p>
               </span>
             </div>
@@ -51,11 +51,11 @@ export default function AboutMe() {
       <Element  name="skills" className="skills">
           <section className="AboutMe-container2">
             <div className="AboutMe-container2-box1">
-              <h4>Skills</h4>
+              <h4>Habilidades</h4>
             </div>
             <div className="AboutMe-container2-box2">
               <p className="AboutMe-container2-box2-description">
-              With a special focus on React.js, HTML, CSS, Node.js, Typescript, and a keen eye for UI/UX details.
+              Com foco especial em React.js, HTML, CSS, Node.js, Typescript e um olhar atento para detalhes de UI/UX.
               </p>
             </div>
             <div className="AboutMe-container2-box3">
@@ -97,7 +97,7 @@ export default function AboutMe() {
 
           </section>
           </Element>
-          <section className="AboutMe-container3"> </section>
+          {/* <section className="AboutMe-container3"> </section> */}
         </section>
         
       </main>

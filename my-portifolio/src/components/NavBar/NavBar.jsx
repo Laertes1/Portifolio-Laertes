@@ -147,9 +147,9 @@ export default function NavBar(props) {
               </Link>
             </ScrollLink>
               
-            <div className="box2 box1">
+            {/* <div className="box2 box1">
               <img src={lua} alt="icone da lua" className="lua" />
-            </div>
+            </div> */}
           </section>
         </section>
       </nav>

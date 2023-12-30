@@ -3,7 +3,7 @@ import "../Projects/projects.css";
 
 /*-----Buttons-----*/
 import Button1 from "../Projects/buttons/button1/button1";
-import Button2 from "../Projects/buttons/button2/button2";
+// import Button2 from "../Projects/buttons/button2/button2";
 
 export default function projects(props) {
   return (
@@ -31,7 +31,7 @@ export default function projects(props) {
           </span>
           <span className="projects-container2-box-contents4">
             <Button1 liveCode={props.liveCode} />
-            <Button2 />
+            {/* <Button2 /> */}
           </span>
         </span>
       </div>

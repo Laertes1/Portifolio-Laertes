@@ -22,9 +22,9 @@ export default function Footer() {
       <Element className="footer" name="Footer">
         <section className="footer-container1">
           <div className="footer-container1-box1">
-            <h5 className="footer-container1-box1-title">Let’s connect</h5>
+            <h5 className="footer-container1-box1-title">Vamos nos conectar</h5>
             <p className="footer-container1-box1-paragraph">
-              Shoot me email to chat about my work or just like to say hey{" "}
+            Envie-me um e-mail para conversar sobre trabalho ou apenas diga "oi"{" "}
             </p>
           </div>
           <div className="footer-container1-box2">
@@ -38,7 +38,7 @@ export default function Footer() {
               onClick={scroolToTop}
             >
               <p className="footer-container1-box2-backToTop-paragraph">
-                Back To Top
+                Voltar para o topo
               </p>
               <img
                 src={ArrowUp}
@@ -50,7 +50,7 @@ export default function Footer() {
         </section>
         <section className="footer-container2">
           <p className="footer-container2-paragraph">
-            © Coded by Laertes Angelo 💜{" "}
+            © Criado por Laertes Angelo 💜{" "}
           </p>
         </section>
       </Element>

@@ -4,7 +4,7 @@ export default function button1(Props) {
   return (
     <>
       <a href={Props.liveCode} target="_blank" rel="noreferrer">
-        <button className="button">view code</button>
+        <button className="button">ver código</button>
       </a>
     </>
   );

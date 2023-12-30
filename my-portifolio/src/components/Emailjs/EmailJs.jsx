@@ -26,15 +26,15 @@ export default function EmailJs() {
 
   return (
     <form ref={form} onSubmit={sendEmail} className="emailForm">
-      <h3 className="talkToMe">Talk to me!</h3>
+      <h3 className="talkToMe">Fale comigo!</h3>
       <span className="form-box">
         <span className="form-box-boxName">
-          <label>Name</label>
+          <label>Nome</label>
           <input
             type="text"
             name="user_name"
             className="formEmail-input"
-            placeholder="Write you name here"
+            placeholder="Escreva o seu nome aqui"
           />
         </span>
         <span className="form-box-boxEmail">
@@ -43,19 +43,19 @@ export default function EmailJs() {
             type="email"
             name="user_email"
             className="formEmail-input"
-            placeholder="Write you email here"
+            placeholder="Escreva o seu e-mail aqui"
           />
         </span>
       </span>
       <span className="form-boxMessage">
-        <label>Message</label>
-        <textarea name="message" className="form-message" placeholder="Write you message here"
+        <label>Menssagem</label>
+        <textarea name="message" className="form-message" placeholder="Digite a sua menssagem aqui"
 />
       </span>
       <span className="form-boxSendEmail">
       <input
           type="submit"
-          value="Send"
+          value="Enviar"
           className="form-boxSendEmail-sendMessage"
         />
       </span>

@@ -33,6 +33,7 @@
 .projects-container2-box-contents2-text{
     font-family: var(--font-inter);
     color: #fff;
+    font-size: 90%;
 }
 .projects-container2-box-contents4{
     display: flex;

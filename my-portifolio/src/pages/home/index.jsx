@@ -9,31 +9,33 @@ import NavBar from '../../components/NavBar/NavBar'
 /*-----Images-----*/
 import MyPhoto from "../../assets/minhaFoto.jpg";
 import loading from '../../assets/Projects/7331649-carregamento-lento-da-internet-bar-doodle-com-caracol-vetor.jpg'
-/*------Images From Projects-----*/
+//? Images From Projects
 import Calculator from "../../assets/Projects/Calculadora.png";
 import CalculatorOfGenes from "../../assets/Projects/Captura2Genes.png";
 import Crud from "../../assets/Projects/crud.png";
-/*----Icons----*/
+//? Icons
 import ArrowDown from "../../assets/icons/noBackGround/Icon=arrow-down, Theme=dark, State=default.svg";
-/*-----Icons------*/
+//? Icons
 import js from "../../assets/icons/noBackGround/Icon=javascript, Theme=dark, State=default.svg";
 import react from "../../assets/icons/noBackGround/Icon=react, Theme=dark, State=default.svg";
 import css from "../../assets/icons/noBackGround/Icon=css, Theme=dark, State=default.svg";
 import html from "../../assets/icons/noBackGround/Icon=html, Theme=dark, State=default.svg";
 // import typescript from "../../assets/icons/noBackGround/typescript .svg";
 import nodejs from "../../assets/icons/noBackGround/node-js.svg";
-/*-----Buttons-----*/
+//? Buttons
 import ButtonGitHub from "../../components/Buttons/GitHubIcon/GitHubIcon";
 import ButtonLinkedin from "../../components/Buttons/LinkedinIcon/LinkedinIcon";
-/*-----React Link-----*/
+//? React Link
 import { Link } from "react-router-dom";
-/*-----React Scroll-----*/
+//? React Scroll
 import { Element } from "react-scroll";
-/*-----Scroll To Top-----*/
+//?Scroll To Top
 import ScrollToTop from "../../components/scrollToTop/scrollToTop";
-/*------React Scroll-----*/
+//? React Scroll
 const Scroll = require("react-scroll");
 const ScrollLink = Scroll.Link;
+//? Video Player
+// import ReactPlayer from 'react-player';
 
 export default function Index() {
   return (
@@ -44,22 +46,22 @@ export default function Index() {
         to3="AboutMe"
         to4="formEmail"
         value1='Home'
-        value2='Projects'
-        value3='About Me'
-        value4='Talk to me'
+        value2='Projetos'
+        value3='Sobre Mim'
+        value4='Fale comigo'
         />
       {/*-----Home----*/}
       <main>
         <section className="section-pincipal">
           <Element className="main-sec1" name="Home">
             <div className="main-sec1-div1">
-              <h3 className="title">Hello, i am Laertes</h3>
+              <h3 className="title">Olá, eu sou Laertes</h3>
               <h4 className="main-sec1-div1-h4">Full-Stack Developer</h4>
             </div>
             <div className="main-sec1-div2">
               <p className="main-sec1-div2-paragraph">
-                Hello! I'm Laertes, a full-stack developer with solid experience
-                in creating web applications.{" "}
+                 Olá! Sou Laertes, um desenvolvedor full-stack com sólida experiência
+                 na criação de aplicações web.{" "}
               </p>
             </div>
             <div className="main-sec1-div3">
@@ -77,12 +79,12 @@ export default function Index() {
                   duration={500}
                   className="navBar-p p4"
                 >
-                  <button className="btn-contato">GET IN TOUCH</button>
+                  <button className="btn-contato">ENTRAR EM CONTATO</button>
                 </ScrollLink>
 
                 <Link to="/AboutMe" className="Link">
                   {" "}
-                  <button className="btn-resume">READ MORE</button>
+                  <button className="btn-resume">MAIS INFORMAÇÕES</button>
                 </Link>
               </span>
             </div>
@@ -101,14 +103,14 @@ export default function Index() {
 
         <Element className="projects" name="Projects" id="Projects">
           <div className="projects-container1">
-            <h3 className="projects-container1-title">Projects</h3>
+            <h3 className="projects-container1-title">Projetos</h3>
           </div>
           <div className="projects-container3">
             <div className="projects-container3-box1">
               <Projects
                 projectImage={Calculator}
-                title="Calculator"
-                description="This is a calculator to test my knowledge."
+                title="Calculadora"
+                description="Esta é uma calculadora para testar minhas habilidades."
                 icon1={js}
                 icon2={html}
                 icon3={css}
@@ -117,8 +119,8 @@ export default function Index() {
               />
               <Projects
                 projectImage={CalculatorOfGenes}
-                title="Mix of genes"
-                description="This is a gene calculator, made to mix genes."
+                title="Calculadora Genética"
+                description="Esta é uma calculadora genética, feita para misturar genes."
                 icon1={html}
                 icon2={css}
                 icon3={js}
@@ -131,7 +133,7 @@ export default function Index() {
               <Projects
                 projectImage={Crud}
                 title="Games love"
-                description="This is a full-stack game search system."
+                description="Este é um sistema de busca de jogos."
                 icon1={js}
                 icon2={react}
                 icon3={css}
@@ -140,8 +142,8 @@ export default function Index() {
               />
               <Projects
                 projectImage={loading}
-                title="Project under development"
-                description="Take it easy"
+                title="Projeto em construção"
+                description="Tenha calma"
                 icon1={js}
                 icon2={react}
                 icon3={css}
@@ -153,19 +155,18 @@ export default function Index() {
         {/*----About Me-----*/}
         <Element className="aboutMe" name="AboutMe">
           <div className="aboutMe-container1">
-            <h4 className="aboutMe-container1-title">Hi There!</h4>
+            <h4 className="aboutMe-container1-title">Olá</h4>
             <span className="aboutMe-container1-description">
               <p className="aboutMe-container1-description-text">
-                Hi, I'm Laertes, a passionate full-stack developer with a
-                diverse set of skills that combine to create exceptional web
-                experiences. With a special focus on React.js, HTML, CSS,
-                Node.js and a keen eye for UI/UX details, I'm prepared to
-                transform your ideas into stunning web interfaces.
+              Olá, sou Laertes, um desenvolvedor full-stack apaixonado com uma
+                 conjunto diversificado de habilidades que se combinam para criar experiências web excepcionais. Com foco especial em React.js, HTML, CSS, JavaScript
+                 Node.js, Typescript e um olhar atento aos detalhes de UI/UX, estou preparado para
+                 transforme suas ideias em interfaces web impressionantes.
               </p>
               <p className="aboutMe-container1-description-text">
-                I am committed to creating digital solutions that not only meet
-                technical needs but also stand out in terms of design and
-                usability. Delivering clean code and a responsive website.
+              Estou empenhado em criar soluções digitais que não apenas atendam
+                 necessidades técnicas, mas também se destacam em termos de design e
+                 usabilidade. Entregando código limpo e um site responsivo.
               </p>
             </span>
             <Link to="/AboutMe">
@@ -173,7 +174,7 @@ export default function Index() {
                 className="aboutMe-container1-readMore"
                 onClick={ScrollToTop}
               >
-                READ MORE
+                VEJA MAIS
               </button>
             </Link>
           </div>
