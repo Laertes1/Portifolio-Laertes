@@ -77,9 +77,9 @@ export default function Index() {
                   hashSpy={true}
                   offset={-80}
                   duration={500}
-                  className="navBar-p p4"
+                  className="buttonLinkBoxer"
                 >
-                  <button className="btn-contato">ENTRAR EM CONTATO</button>
+                  <button className="btn-contato">ENTRAR EM CONTATO </button>
                 </ScrollLink>
 
                 <Link to="/AboutMe" className="Link">
