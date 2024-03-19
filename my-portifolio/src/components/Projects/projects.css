@@ -1,5 +1,4 @@
-
-.projects-container2-box{
+.projects-container2-box {
     display: flex;
     flex-direction: column;
     width: 477px;
@@ -7,42 +6,52 @@
     border: 1px solid var(--neutral-600, #525252);
     border-radius: 2px;
     gap: 19px;
-    margin-left: 20px ;
+    margin-left: 20px;
 }
-.projects-container2-box1-box{
+
+.projects-container2-box1-box {
     margin: 0px 0px 0px 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 5%;
 }
-.project1{
+
+.project1 {
     width: 477px;
     height: 309px;
 }
-.projects-container2-box-contents2{ 
+
+.projects-container2-box-contents2 {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.projects-container2-box-contents2-title{
+
+.projects-container2-box-contents2-title {
     color: #fff;
     font-family: var(--font-sora);
-    font-size: 28px;
+    font-size: 190%;
 }
-.projects-container2-box-contents2-text{
+
+.projects-container2-box-contents2-text {
     font-family: var(--font-inter);
     color: #fff;
     font-size: 90%;
+    line-height:100%;
+    height: 35px;
+    width: 99%;
 }
-.projects-container2-box-contents4{
+
+.projects-container2-box-contents4 {
     display: flex;
     align-items: center;
     flex-direction: row;
     gap: 20px;
 }
-.icon{
+
+.icon {
     width: 44px;
     height: 44px;
-    
+
 }
