@@ -10,7 +10,7 @@
   --neutral-700: #404040;
 }
 
-* * {
+* {
   margin: 0px;
   padding: 0px;
 }
@@ -300,9 +300,14 @@ main {
   }
 
   /*-----Footer-----*/
+  .footer{
+    width: 100%;
+  }
   .footer-container1 {
+    width: 90%;
     gap: 10%;
     justify-content: space-around;
+    background-color: aqua;
   }
 
 }

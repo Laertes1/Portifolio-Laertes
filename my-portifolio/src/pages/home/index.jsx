@@ -182,7 +182,7 @@ export default function Index() {
             <img src={MyPhoto} alt="" className="MyImage" />
           </div>
         </Element>
-        <Element name="formEmail">
+        <Element name="formEmail" className="formEmailBoxer">
           <section className="formEmail">
             <EmailJs />
           </section>
