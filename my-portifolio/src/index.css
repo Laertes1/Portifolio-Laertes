@@ -4,13 +4,13 @@
   --font-inter: "Inter", sans-serif;
   --font-sora: "Sora", sans-serif;
   --neutral-50: #FAFAFA;
-  --purple-300: #DDD6FE ;
+  --purple-300: #DDD6FE;
   --neutral-500: #737373;
   --black: #fafafa00;
   --neutral-700: #404040;
 }
 
-* * {
+* {
   margin: 0px;
   padding: 0px;
 }
@@ -111,6 +111,7 @@ main {
     width: 550px;
   }
 
+
   /*-----IMG-----*/
   .main-image {
     height: 377.574px;
@@ -165,6 +166,17 @@ main {
     width: 100%;
 
   }
+  .main-sec1-div3{
+    width: 310px;
+  }
+  .main-sec1-div3-box2{
+    gap: 10px;
+  }
+  .buttonLinkBoxer, .Link{
+    width: 79.82px;
+    height: 42px;
+}
+
 
   /*-----Projects-----*/
   .projects-container2-box {
@@ -288,9 +300,14 @@ main {
   }
 
   /*-----Footer-----*/
+  .footer{
+    width: 100%;
+  }
   .footer-container1 {
+    width: 90%;
     gap: 10%;
     justify-content: space-around;
+    background-color: aqua;
   }
 
 }
@@ -319,6 +336,7 @@ main {
   .projects-container3 {
     width: 100%;
   }
+
   /*-----AboutMe-----*/
   .aboutMe-container1 {
     width: 90%;
@@ -355,28 +373,30 @@ main {
 }
 
 @media screen and (max-width: 460px) {
+
   /*----NavBar------*/
-  nav{
+  nav {
     width: 98.65%;
   }
+
   /*-----Home-----*/
-  .section-pincipal{
+  .section-pincipal {
     width: 99.9%;
   }
-  .main-sec1{
+
+  .main-sec1 {
     width: 100%;
   }
-  .main-sec1-div3 {
-    flex-direction: column;
-    width: 99.7%;
-  }
-  .title{
+
+  .title {
     width: 100%;
   }
+
   /*-----Box-Scroll-----*/
-  .box-scroll{
+  .box-scroll {
     margin-top: 35%;
   }
+
   /*-----Projects-----*/
   .projects-container3-box {
     width: 800px;
@@ -406,6 +426,7 @@ main {
 }
 
 @media screen and (max-width: 320px) {
+
   /*-----AboutMe-----*/
   .aboutMe-container2 {
     width: 100%;
