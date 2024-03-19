@@ -1,7 +1,6 @@
 import React from "react";
 import "../NavBar/NavBar.css";
 /*-----Icons-----*/
-import lua from "../../assets/icons/noBackGround/moon.svg";
 import logo from "../../assets/icons/noBackGround/ns..svg";
 /*-----React Link-----*/
 import { Link } from "react-router-dom";
@@ -89,9 +88,10 @@ export default function NavBar(props) {
                   {props.value4}
                 </ScrollLink>
               </div>
-              <div className="box2 box1">
+              {/* //!Lua do darkMode removida até ser feito a troca do dark para light mode  */}
+              {/* <div className="box2 box1">
                 <img src={lua} alt="icone da lua" className="lua" />
-              </div>
+              </div> */}
             </section>
           </section>
           <section className="menuHamburguer" id="menuHamburguer">
