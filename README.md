@@ -33,5 +33,5 @@
 
 <h3 align="center">Sobre Mim</h3>
 
-<p  align="center">Ela pode ser acessada pelo botão "VEJA MAIS" que está presente na parte de sobre mim da página  <a href="home-id"> HOME </a>  </p>
+<p  align="center">Ela pode ser acessada pelo botão "VEJA MAIS" que está presente na parte de sobre mim da página  <a href="#home-id"> HOME </a>  </p>
 
