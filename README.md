@@ -20,18 +20,20 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="66px" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" width="66px" />
 
-  <h4> :exclamation: Também foi utilizado a api de envio de email : <a href="https://www.emailjs.com/" target="_blank"> EmailJs</a> :exclamation: </h4>
+  <h4> :exclamation: Também foi utilizada a api de envio de e-mail : <a href="https://www.emailjs.com/" target="_blank"> EmailJs</a> :exclamation: </h4>
 </div>
 <hr/>
 
 <h2 align="center"> :exclamation: Guia :exclamation: </h2>
 
-<h2 align="center">O site é composto por apenas duas páginas </h2>
+<h2 align="center">O site é composto por apenas duas páginas: </h2>
 
-<h3 align="center" id="home-id"> HOME </h3>
-<p  align="center"> Nela está presente:  a parte de projetos (onde está a amostra os meus projetos); a parte de Sobre Mim (onde há um breve resumo sobre mim); a parte de Fale comigo( onde é possivel mandar um email para mim).</p>
+<h3 align="center" id="home-id"><a href="#home-id"> HOME </a></h3>
+<p  align="center"> Nela estão presentes: a parte de projetos, onde estão a amostra os meus projetos; a parte de Sobre Mim, onde há um breve resumo sobre mim; a parte de Fale comigo, onde é possível mandar um e-mail para mim.</p>
 
 <h3 align="center">Sobre Mim</h3>
 
-<p  align="center">Ela pode ser acessada pelo botão "VEJA MAIS" que está presente na parte de sobre mim da página  <a href="#home-id"> HOME </a>  </p>
+<p  align="center">Ela pode ser acessada pelo botão "VEJA MAIS" que está presente na parte de sobre mim da página
+<a href="#home-id"> HOME </a>.
+ Nela está presente: a parte onde eu falo de maneira mais aprofundada sobre mim; e a parte de habilidades, onde mostro as tecnologias que utilizo. </p>
 
