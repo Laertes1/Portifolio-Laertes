@@ -13,7 +13,7 @@
 }
 
 h1 {
-    color: var(--neutral-50, #FAFAFA);
+    color: var(--neutral-50);
 
     /* H3 - Sora */
     font-family: var(--font-sora);
@@ -39,7 +39,7 @@ h1 {
 }
 
 .AboutMe-container2 h4,.AboutMe-container1-box2-boxDescription h4 {
-    color: #FFF;
+    color: var(--neutral-25);
 
     /* H4 - Sora */
     font-family: var(--font-sora);
@@ -53,7 +53,7 @@ h1 {
 }
 
 p {
-    color: var(--neutral-100, #F5F5F5);
+    color: var(--neutral-100);
 
     font-family: var(--font-inter);
     font-size: 18px;

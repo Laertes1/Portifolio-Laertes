@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 477px;
     height: 545px;
-    border: 1px solid var(--neutral-600, #525252);
+    border: 1px solid var(--neutral-600);
     border-radius: 2px;
     gap: 19px;
     margin-left: 20px;
