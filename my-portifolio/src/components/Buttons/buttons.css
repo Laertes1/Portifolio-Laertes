@@ -1,20 +1,14 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-body{
-    background: var(--neutral-900, #171717);
-}
+
 .box-Icons{
     border-radius: 5px;
-    background: var(--purple-200, #DDD6FE);
+    background: var(--purple-200);
     width: 44px;
     height: 44px;
     display: flex;
     align-items: center;    
     justify-content: center;
-    transition: 0.5s;
+    transition: var(--transition-0_5);
 }
 .box-Icons:hover{
-    background: var(--neutral-50, #FAFAFA);
+    background: var(--neutral-50);
 }
