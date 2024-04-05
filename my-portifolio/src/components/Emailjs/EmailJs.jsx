@@ -1,7 +1,17 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./EmailJs.css";
+
+// Modal email send
+import BoxMessage from "../messageOfSendEmail/boxMessage"
 export default function EmailJs() {
+  const [modalEmailSend, setModalEmailsend ] = useState(false)
+  
+  function setTimeClose(){
+    console.log("ola mundo");
+  }
+
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -57,8 +67,11 @@ export default function EmailJs() {
           type="submit"
           value="Enviar"
           className="form-boxSendEmail-sendMessage"
+          onClick={() => {setModalEmailsend(true)  + setTimeClose()}}
         />
       </span>
+
+      {modalEmailSend && <BoxMessage setModalClose={setModalEmailsend} />}
     </form>
   );
 }
