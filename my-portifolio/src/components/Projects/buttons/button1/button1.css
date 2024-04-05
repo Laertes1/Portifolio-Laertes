@@ -1,15 +1,16 @@
 .button {
   border-radius: 5px;
-  background-color: #ddd6fe;
+  background-color: var(--purple-200);
   text-align: center;
   width: 116px;
   height: 44px;
   font-family: var(--font-inter);
-  color: #000000;
+  color: var(--black);
   border: none;
   transition: 0.5s;
 }
 
 .button:hover {
-  background: var(--neutral-50, #fafafa);
+  background: var(--neutral-700);
+  color: var(--neutral-50);
 }
