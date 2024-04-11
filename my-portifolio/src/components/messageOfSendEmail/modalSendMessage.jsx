@@ -1,4 +1,4 @@
-import './boxMessage.css'
+import './modalSendMessage.css'
 export default function MessageOfSendEmail({setModalClose}) {
 
     return (
