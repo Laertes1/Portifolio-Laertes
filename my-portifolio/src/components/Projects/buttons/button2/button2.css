@@ -1,15 +1,15 @@
 .button2{
     border-radius: 5px;
     border-radius: 5px;
-    border: 1px solid var(--neutral-500, #737373);
+    border: 1px solid var(--neutral-500);
     text-align: center;
     width: 111px;
     height: 44px;
-    background: var(--neutral-900, #171717);
+    background: var(--neutral-900);
     color: #fff;
     font-family: var(--font-inter);
     transition: 0.5s;
 }
 .button2:hover{
-    background: var(--neutral-700, #404040);
+    background: var(--neutral-700);
 }

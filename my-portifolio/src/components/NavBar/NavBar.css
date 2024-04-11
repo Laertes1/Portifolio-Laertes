@@ -3,7 +3,7 @@ nav {
     width: 100%;
     height: 66px;
     z-index: 999;
-    background: var(--neutral-900, #171717);
+    background: var(--neutral-900);
     top: 0px;
 
 }
@@ -35,7 +35,7 @@ nav {
     flex-direction: row;
     gap: 30px;
     font-family: var(--font-inter);
-    color: var(--neutral-50, #FAFAFA);
+    color: var(--neutral-50);
     /* 18 - Paragraph Default */
     font-size: 18px;
     font-style: normal;
@@ -73,7 +73,7 @@ nav {
 }
 
 .navBar-p-hamburguer {
-    color: var(--neutral-100, #F5F5F5);
+    color: var(--neutral-100);
     font-family: var(--font-inter);
     font-size: 34px;
     font-style: normal;
