@@ -8,15 +8,21 @@ import Email from "../Buttons/Email/Email";
 import ArrowUp from "../../assets/icons/noBackGround/Icon=arrow-up, Theme=dark, State=default.svg";
 /*-----React Scroll-----*/
 import { Element } from "react-scroll";
+/*------React Link------*/
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   /*----Scrollar Para Cima-----*/
   const scroolToTop = () => {
     window.scroll({
       top: 0,
       left: 0,
-      behavior: "smooth",
+      behavior: "smooth", 
     });
   };
+  // React Scroll
+const Scroll = require("react-scroll");
+const ScrollLink = Scroll.Link;
   return (
     <>
       <Element className="footer" name="Footer">
@@ -31,7 +37,12 @@ export default function Footer() {
             <span className="footer-container1-box2-buttons">
               <GitHubIcon />
               <LinkedinIcon />
-              <Email />
+              
+
+                <Link to="/">
+                <Email />
+                </Link>
+                
             </span>
             <span
               className="footer-container1-box2-backToTop"

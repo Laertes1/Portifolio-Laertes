@@ -34,8 +34,6 @@ import ScrollToTop from "../../components/scrollToTop/scrollToTop";
 //? React Scroll
 const Scroll = require("react-scroll");
 const ScrollLink = Scroll.Link;
-//? Video Player
-// import ReactPlayer from 'react-player';
 
 export default function Index() {
   return (
