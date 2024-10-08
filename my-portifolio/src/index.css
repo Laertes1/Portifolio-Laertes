@@ -41,7 +41,9 @@ body {
 main {
   width: 100%;
 }
-
+a{
+   text-decoration: none;
+}
 @media screen and (min-width:1745px) {
   .section-pincipal {
     gap: 330px;
