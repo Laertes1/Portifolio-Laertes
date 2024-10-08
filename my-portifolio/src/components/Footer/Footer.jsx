@@ -20,6 +20,9 @@ export default function Footer() {
       behavior: "smooth", 
     });
   };
+  // React Scroll
+const Scroll = require("react-scroll");
+const ScrollLink = Scroll.Link;
   return (
     <>
       <Element className="footer" name="Footer">

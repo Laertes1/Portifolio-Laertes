@@ -10,10 +10,9 @@ export default function projects(props) {
     <>
       {/*-----Projects-----*/}
 
-      <div className="projects-container2-box1">
+      <div className="projects-container2-box                 1">
         <span className="projects-container2-box-contents1">
-          <span className="Carrousel">{props.content}</span>
-          <img src={props.projectImage} alt={props.alt} className="project1" style={{display:props.display}}/>
+          <img src={props.projectImage} alt="Projeto 1" className="project1" />
         </span>
         <span className="projects-container2-box1-box">
           <span className="projects-container2-box-contents2">
@@ -25,9 +24,9 @@ export default function projects(props) {
             </p>
           </span>
           <span className="projects-container2-box-contents3">
-            <img src={props.icon1} alt="icone i1" className="icon" />
-            <img src={props.icon2} alt="icone i2" className="icon" />
-            <img src={props.icon3} alt="icone i3" className="icon" />
+            <img src={props.icon1} alt="icone 1" className="icon" />
+            <img src={props.icon2} alt="icone 2" className="icon" />
+            <img src={props.icon3} alt="icone 3" className="icon" />
             <img src={props.icon4} style={props.style} alt="icone 4 " className="icon i4" />
           </span>
           <span className="projects-container2-box-contents4">

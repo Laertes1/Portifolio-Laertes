@@ -87,7 +87,7 @@ p {
     justify-content: center;
 }
 
-.AboutMe-container2-box1 h4 {
+.AboutMe-container2 h4 {
     width: 200px;
 }
 
@@ -95,9 +95,7 @@ p {
     width: 100%;
     text-align: center;
 }
-.AboutMe-container1-box2-boxDescription h4{
-    width: 100%;
-}
+
 .AboutMe-container1-box2-boxDescription-description {
     width: 100%;
 }
@@ -136,4 +134,58 @@ p {
     margin-top: 2px;
     width: 34px;
     height: 34px;
+}
+/*-------Responsividade------*/
+
+@media screen and (max-width: 960px) {
+    .AboutMe-container1-box2 {
+        flex-direction: column;
+    }
+
+    .AboutMe-container1-box2-boxDescription {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-top: 11%;
+    }
+
+    h4 {
+        padding-bottom: 2%;
+    }
+    .AboutMe-container2-box3 {
+        flex-direction: column;
+        height: 150px;
+    }
+    .AboutMe-container2-box3-box1,
+    .AboutMe-container2-box3-box2 {
+        gap: 2%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .AboutMe-container2 {
+        padding-top: 103px;
+    }
+
+    .AboutMe-container1-box2-boxDescription-description {
+        display: flex;
+        align-items: center;
+    }
+
+    .AboutMe-container1-box2-boxDescription h4 {
+        font-size: 30px;
+    }
+
+
+    .AboutMe-container2-box3-box2 {
+        gap: 5%;
+    }
+    .AboutMe-container2 h4 {
+        width: 55%;
+        font-size: 50px;
+        text-align: center;
+    }
+    
 }

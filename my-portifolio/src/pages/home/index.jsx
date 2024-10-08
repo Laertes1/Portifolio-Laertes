@@ -10,9 +10,9 @@ import NavBar from '../../components/NavBar/NavBar'
 import MyPhoto from "../../assets/minhaFoto.jpg";
 import loading from '../../assets/Projects/7331649-carregamento-lento-da-internet-bar-doodle-com-caracol-vetor.jpg'
 //? Images From Projects
+import Calculator from "../../assets/Projects/Calculadora.png";
 import CalculatorOfGenes from "../../assets/Projects/Captura2Genes.png";
 import Crud from "../../assets/Projects/crud.png";
-import Ecommerce from "../../components/carrousel/carrousel.jsx"
 //? Icons
 import ArrowDown from "../../assets/icons/noBackGround/Icon=arrow-down, Theme=dark, State=default.svg";
 //? Icons
@@ -20,7 +20,7 @@ import js from "../../assets/icons/noBackGround/Icon=javascript, Theme=dark, Sta
 import react from "../../assets/icons/noBackGround/Icon=react, Theme=dark, State=default.svg";
 import css from "../../assets/icons/noBackGround/Icon=css, Theme=dark, State=default.svg";
 import html from "../../assets/icons/noBackGround/Icon=html, Theme=dark, State=default.svg";
-import typescript from "../../assets/icons/noBackGround/typescript .svg";
+// import typescript from "../../assets/icons/noBackGround/typescript .svg";
 import nodejs from "../../assets/icons/noBackGround/node-js.svg";
 //? Buttons
 import ButtonGitHub from "../../components/Buttons/GitHubIcon/GitHubIcon";
@@ -34,8 +34,6 @@ import ScrollToTop from "../../components/scrollToTop/scrollToTop";
 //? React Scroll
 const Scroll = require("react-scroll");
 const ScrollLink = Scroll.Link;
-
-
 
 export default function Index() {
   return (
@@ -95,10 +93,12 @@ export default function Index() {
               <Socket />
             </div>
           </section>
-  {/* //!Remover */}        <span className="box-scroll"> <p className="p-scroll">Scroll</p> <img src={ArrowDown} alt="Seta Para Baixo" className="arrowDown" />
+          <span className="box-scroll">
+            <p className="p-scroll">Scroll</p>
+            <img src={ArrowDown} alt="Seta Para Baixo" className="arrowDown" />
           </span>
         </section>
-           {/* //! Projects   */}
+
         <Element className="projects" name="Projects" id="Projects">
           <div className="projects-container1">
             <h3 className="projects-container1-title">Projetos</h3>
@@ -106,17 +106,14 @@ export default function Index() {
           <div className="projects-container3">
             <div className="projects-container3-box1">
               <Projects
-                title="Ecommerce"
-                description="Ecommerce focado em produtos para casa."
+                projectImage={Calculator}
+                title="Calculadora"
+                description="Esta é uma calculadora para testar minhas habilidades."
                 icon1={js}
-                icon2={react}
+                icon2={html}
                 icon3={css}
-                icon4={typescript}
-                style={{width: "24px"}}
-                alt={""}
-                liveCode='https://github.com/Laertes1/e-commerce'
-                display={'none'}
-                content={<Ecommerce/>}
+                style={{ opacity: "0" }}
+                liveCode='https://github.com/Laertes1/Calculadora.git'
               />
               <Projects
                 projectImage={CalculatorOfGenes}
@@ -149,7 +146,7 @@ export default function Index() {
                 icon2={react}
                 icon3={css}
                 style={{ opacity: "0" }}
-              /> 
+              />
             </div>
           </div>
         </Element>
