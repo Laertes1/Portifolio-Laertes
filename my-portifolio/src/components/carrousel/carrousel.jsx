@@ -1,9 +1,9 @@
 import React from "react";
 import "./carrousel.css";
 import Captures1 from "../../assets/Projects/capturesE-commerce/First.png";
-import Captures2 from "../../assets/Projects/capturesE-commerce/second.png";
-import Captures3 from "../../assets/Projects/capturesE-commerce/third.png";
-import Captures4 from "../../assets/Projects/capturesE-commerce/fourth.png";
+import Captures2 from "../../assets/Projects/capturesE-commerce/Second.png";
+import Captures3 from "../../assets/Projects/capturesE-commerce/Third.png";
+import Captures4 from "../../assets/Projects/capturesE-commerce/Fourth.png";
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel  from 'react-bootstrap/Carousel';
   
