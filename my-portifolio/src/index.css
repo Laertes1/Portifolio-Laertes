@@ -41,7 +41,9 @@ body {
 main {
   width: 100%;
 }
-
+a{
+   text-decoration: none;
+}
 @media screen and (min-width:1745px) {
   .section-pincipal {
     gap: 330px;
@@ -432,10 +434,76 @@ main {
   }
 }
 
+/* Responsivity of AboutMe */
+
+/*-------Responsividade------*/
+
+@media screen and (max-width: 960px) {
+  .AboutMe-container1-box2 {
+      flex-direction: column;
+  }
+
+  .AboutMe-container1-box2-boxDescription {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      padding-top: 11%;
+  }
+
+  .AboutMe-container1-box2-boxDescription h4
+  {
+      padding-bottom: 2%;
+  }
+  .AboutMe-container2-box3 {
+      flex-direction: column;
+      height: 150px;
+  }
+  .AboutMe-container2-box3-box1,
+  .AboutMe-container2-box3-box2 {
+      gap: 2%;
+      justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .AboutMe-container2 {
+      padding-top: 103px;
+  }
+
+  .AboutMe-container1-box2-boxDescription-description {
+      display: flex;
+      align-items: center;
+  }
+
+  .AboutMe-container1-box2-boxDescription h4 {
+      font-size: 30px;
+  }
+
+
+  .AboutMe-container2-box3-box2 {
+      gap: 5%;
+  }
+  .AboutMe-container2-box1 h4 {
+      font-size: 50px;
+      text-align: center;
+      width: 100%;
+  }
+  
+}
+
+
 @media screen and (max-width: 320px) {
 
   /*-----AboutMe-----*/
   .aboutMe-container2 {
     width: 100%;
   }
+
+  .AboutMe-container2-box1 h4 {
+    font-size: 39px;
+    text-align: center;
+    width: 100%;
+}
+
 }
