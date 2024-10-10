@@ -1,4 +1,4 @@
-.card {
+.cardPhoto{
     position: relative;
     width: 290px;
     height: 394px;
@@ -16,11 +16,10 @@
     width: 270px;
     height: 379px;
   }
-  .card::before {
+  .cardPhoto::before {
     content: '';
     position: absolute;
     inset: 0;
-    left: -5px;
     margin: auto;
     width: 290px;
     height: 399px;
@@ -31,7 +30,7 @@
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   
-  .card::after {
+  .cardPhoto::after {
     content: "";
     z-index: -1;
     position: absolute;
@@ -47,21 +46,13 @@
     font-weight: 700;
   }
   
-  .card p:not(.heading) {
+  .cardPhoto p:not(.heading) {
     font-size: 14px;
   }
   
-  .card p:last-child {
+  .cardPhoto p:last-child {
     color: #e81cff;
     font-weight: 600;
   }
-  
-  .card:hover::after {
-    filter: blur(30px);
-  }
-  
-  .card:hover::before {
-    transform: rotate(-90deg) scaleX(1.38) scaleY(0.73);
-  }
-  
+
   
