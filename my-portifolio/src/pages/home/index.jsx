@@ -120,8 +120,8 @@ export default function Index() {
               />
               <Projects
                 projectImage={CalculatorOfGenes}
-                title="Calculadora Genética"
-                description="Esta é uma calculadora genética, feita para misturar genes."
+                title="Quadro de Punnett"
+                description="Este é o quadro de Punnett, responsavel por realizar misturas genéticas."
                 icon1={html}
                 icon2={css}
                 icon3={js}
