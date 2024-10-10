@@ -1,4 +1,4 @@
-<h1 align="center">Portifóliio de Laertes</h1>
+<h1 align="center">Portifólio de Laertes</h1>
 
 <h2 align="center"> Quem sou ? :wave: </h2> 
 
