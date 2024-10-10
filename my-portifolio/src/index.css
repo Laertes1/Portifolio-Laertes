@@ -341,10 +341,21 @@ a{
   }
 
   /*-----Projects------*/
+  .projects{
+    width: 90%;
+  }
   .projects-container1,
   .projects-container3 {
     width: 100%;
   }
+  .projects-container2-box1 {
+    width: 90%;
+  }
+
+  .project1,.Carrousel {
+    width: 100%;
+    height: 309px;
+}
 
   /*-----AboutMe-----*/
   .aboutMe-container1 {
@@ -431,6 +442,10 @@ a{
     position: relative;
     width: 290px;
     height: 400px;
+  }
+  /* Projects */
+  .projects-container2-box-contents2-title{
+    font-size: 1.5rem;
   }
 }
 
