@@ -3,6 +3,6 @@ import './CardImage.css'
 import MyImage from '../../assets/minhaFoto.jpg'
 export default function CardImage() {
   return (
-    <div class="card"><img src={MyImage} className='MyPhoto' alt="" /></div>
+    <div className="cardPhoto"><img src={MyImage} className='MyPhoto' alt="" /></div>
   )
 }

@@ -1,4 +1,4 @@
-.projects-container2-box {
+.projects-container2-box1 {
     display: flex;
     flex-direction: column;
     width: 477px;
@@ -17,7 +17,7 @@
     gap: 5%;
 }
 
-.project1 {
+.project1,.Carrousel {
     width: 477px;
     height: 309px;
 }
@@ -53,5 +53,8 @@
 .icon {
     width: 44px;
     height: 44px;
-
+}
+.icon .i4{
+    width: 34px;
+    height: 34px;
 }

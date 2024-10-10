@@ -29,6 +29,9 @@ nav {
     align-items: center;
     gap: 53.68px;
 }
+.Link{
+    
+}
 
 .navBar-box2-box1 {
     display: flex;
@@ -42,7 +45,9 @@ nav {
     font-weight: 400;
     line-height: 32px;
 }
-
+.navBar-p{
+    color: #ffff;
+}
 .navBar-p:hover,
 .navBar-p-hamburguer:hover {
     color: #C4B5FD;

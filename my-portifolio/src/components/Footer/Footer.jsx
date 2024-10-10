@@ -17,12 +17,9 @@ export default function Footer() {
     window.scroll({
       top: 0,
       left: 0,
-      behavior: "smooth", 
+      behavior: "smooth",
     });
   };
-  // React Scroll
-const Scroll = require("react-scroll");
-const ScrollLink = Scroll.Link;
   return (
     <>
       <Element className="footer" name="Footer">
@@ -30,19 +27,18 @@ const ScrollLink = Scroll.Link;
           <div className="footer-container1-box1">
             <h5 className="footer-container1-box1-title">Vamos nos conectar</h5>
             <p className="footer-container1-box1-paragraph">
-            Envie-me um e-mail para conversar sobre trabalho ou apenas diga "oi"{" "}
+              Envie-me um e-mail para conversar sobre trabalho ou apenas diga
+              "oi"{" "}
             </p>
           </div>
           <div className="footer-container1-box2">
             <span className="footer-container1-box2-buttons">
               <GitHubIcon />
               <LinkedinIcon />
-              
 
-                <Link to="/">
+              <Link to="/">
                 <Email />
-                </Link>
-                
+              </Link>
             </span>
             <span
               className="footer-container1-box2-backToTop"
@@ -53,7 +49,7 @@ const ScrollLink = Scroll.Link;
               </p>
               <img
                 src={ArrowUp}
-                alt=""
+                alt="seta para cima"
                 className="footer-container1-box2-backToTop-arrowDown"
               />
             </span>
