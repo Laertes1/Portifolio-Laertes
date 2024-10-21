@@ -13,6 +13,8 @@ import loading from '../../assets/Projects/7331649-carregamento-lento-da-interne
 import CalculatorOfGenes from "../../assets/Projects/Captura2Genes.png";
 import Crud from "../../assets/Projects/crud.png";
 import Ecommerce from "../../components/carrousel/carrousel.jsx"
+//? Video Of project my condominium
+import VideoCond from "../../components/videoOfMyCondo/videoOfMyCondo.jsx"
 //? Icons
 import ArrowDown from "../../assets/icons/noBackGround/Icon=arrow-down, Theme=dark, State=default.svg";
 //? Icons
@@ -142,14 +144,19 @@ export default function Index() {
                 liveCode='https://github.com/Laertes1/Games-for-love.git'
               />
               <Projects
-                projectImage={loading}
-                title="Projeto em construção"
-                description="Tenha calma"
+                title="My Condominium"
+                description={"Este projeto visa administrar um condomínio. Ele inclui as páginas de Home, documentos dos funcionários, finanças, relatório de gastos, patrimônio, gastos com segurança e uma página que mostra quem possui lotes nas quadras.  Este site foi criado em conjunto com meu amigo "}
                 icon1={js}
                 icon2={react}
-                icon3={css}
-                style={{ opacity: "0" }}
-              /> 
+                icon3={nodejs}
+                icon4={typescript}
+                style={{width: "24px"}}
+                alt={""}
+                liveCode='https://github.com/Laertes1/My-Condominium.git'
+                display={'none'}
+                content={<VideoCond/>}
+                mention={"Saullo Paullo"}
+              />
             </div>
           </div>
         </Element>

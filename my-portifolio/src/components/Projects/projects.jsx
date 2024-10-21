@@ -3,7 +3,7 @@ import "../Projects/projects.css";
 
 /*-----Buttons-----*/
 import Button1 from "../Projects/buttons/button1/button1";
-// import Button2 from "../Projects/buttons/button2/button2";
+
 
 export default function projects(props) {
   return (
@@ -12,7 +12,7 @@ export default function projects(props) {
 
       <div className="projects-container2-box1">
         <span className="projects-container2-box-contents1">
-          <span className="Carrousel">{props.content}</span>
+          <span className="content">{props.content}</span>
           <img src={props.projectImage} alt={props.alt} className="project1" style={{display:props.display}}/>
         </span>
         <span className="projects-container2-box1-box">
@@ -22,6 +22,7 @@ export default function projects(props) {
             </h4>
             <p className="projects-container2-box-contents2-text">
               {props.description}
+              <a href="https://github.com/Saullo-Programador" >{props.mention}</a>
             </p>
           </span>
           <span className="projects-container2-box-contents3">
@@ -32,7 +33,6 @@ export default function projects(props) {
           </span>
           <span className="projects-container2-box-contents4">
             <Button1 liveCode={props.liveCode} />
-            {/* <Button2 /> */}
           </span>
         </span>
       </div>
