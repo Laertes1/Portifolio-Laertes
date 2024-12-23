@@ -10,6 +10,7 @@ import JavaScriptIcon from "../../assets/icons/Default/Icon=javascript, Theme=da
 import FigmaIcon from "../../assets/icons/Default/Icon=figma, Theme=dark, State=hover.svg";
 import ReactIcon from "../../assets/icons/Default/Icon=react, Theme=dark, State=hover.svg";
 import Typescript from '../../assets/icons/Default/typescript.svg'
+import Java from "../../assets/icons/noBackGround/java.png"
 // NavBar
 import NavBar from '../../components/NavBar/NavBar'
 // React Scrool
@@ -74,12 +75,13 @@ export default function AboutMe() {
                   JavaScript
                 </p>
               </span>
-              </div>
-              <div className="AboutMe-container2-box3-box2">
               <span className="AboutMe-container2-box3-box2-skills react">
                 <img src={ReactIcon} alt="" />
                 <p className="AboutMe-container2-box3-box2-skills-name">React</p>
               </span>
+              </div>
+              <div className="AboutMe-container2-box3-box2">
+
               <span className="AboutMe-container2-box3-box2-skills figma">
                 <img src={FigmaIcon} alt="" />
                 <p className="AboutMe-container2-box3-box2-skills-name">Figma</p>
@@ -91,6 +93,10 @@ export default function AboutMe() {
               <span className="AboutMe-container2-box3-box2-skills typescript">
                 <img src={Typescript} alt="typescript" className="typeScript"/>
                 <p className="AboutMe-container2-box3-box2-skills-name">Typescript</p>
+              </span>
+              <span className="AboutMe-container2-box3-box2-skills java">
+                <img src={Java} alt="Java" className="java"/>
+                <p className="AboutMe-container2-box3-box2-skills-name">Java</p>
               </span>
             </div>
               </div>
