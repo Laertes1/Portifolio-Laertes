@@ -12,7 +12,7 @@
     padding: 65px 0px 51px 0px;
 }
 
-h1 {
+.AboutMe-container1-boxTitle-title {
     color: var(--neutral-50);
 
     /* H3 - Sora */
@@ -21,7 +21,7 @@ h1 {
     font-style: normal;
     font-weight: 700;
     line-height: 70px;
-    /* 125% */
+
     letter-spacing: -1px;
 }
 
@@ -110,15 +110,18 @@ p {
     gap: 4px;
     padding: 36px 0px 0px 0px;
     width: 99%;
-    height: 70px;
+
+ 
 }
 
 .AboutMe-container2-box3-box1,
 .AboutMe-container2-box3-box2 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 310px;
+    justify-content: space-between;
+    width: 410px;
+
+    height: 90px;
 }
 
 .AboutMe-container2-box3-box1-skills,
@@ -132,8 +135,17 @@ p {
     width:94px;
     height: 77px;
 }
+.AboutMe-container2-box3-box2-skills.java{
+    width:94px;
+    height: 89px;
+    margin-bottom: 1px;
+}
 .typeScript{
     margin-top: 2px;
     width: 34px;
     height: 34px;
+}
+.java{
+    width: 44px;
+
 }
