@@ -12,7 +12,7 @@
     padding: 65px 0px 51px 0px;
 }
 
-h1 {
+.AboutMe-container1-boxTitle-title {
     color: var(--neutral-50);
 
     /* H3 - Sora */
@@ -21,7 +21,7 @@ h1 {
     font-style: normal;
     font-weight: 700;
     line-height: 70px;
-    /* 125% */
+
     letter-spacing: -1px;
 }
 

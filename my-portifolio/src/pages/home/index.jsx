@@ -1,18 +1,18 @@
 import React from "react";
 import "./index.css";
 /*-----Components-----*/
-import Projects from "../../components/Projects/projects";
+import { Projects, ProjectVideo } from "../../components/Projects/projects.jsx";
 import EmailJs from "../../components/Emailjs/EmailJs";
 import Socket from "../../components/Socket/Socket";
 //? NavBar 
 import NavBar from '../../components/NavBar/NavBar'
 /*-----Images-----*/
 import MyPhoto from "../../assets/minhaFoto.jpg";
-import loading from '../../assets/Projects/7331649-carregamento-lento-da-internet-bar-doodle-com-caracol-vetor.jpg'
 //? Images From Projects
 import CalculatorOfGenes from "../../assets/Projects/Captura2Genes.png";
-import Crud from "../../assets/Projects/crud.png";
-import Ecommerce from "../../components/carrousel/carrousel.jsx"
+import { CarrouselEComerce, CarrouselCep } from '../../components/carrousel/CarrouselProjects.jsx'
+//? Video Of project my condominium
+import VideoCond from "../../components/videoOfMyCondo/videoOfMyCondo.jsx"
 //? Icons
 import ArrowDown from "../../assets/icons/noBackGround/Icon=arrow-down, Theme=dark, State=default.svg";
 //? Icons
@@ -22,6 +22,7 @@ import css from "../../assets/icons/noBackGround/Icon=css, Theme=dark, State=def
 import html from "../../assets/icons/noBackGround/Icon=html, Theme=dark, State=default.svg";
 import typescript from "../../assets/icons/noBackGround/typescript .svg";
 import nodejs from "../../assets/icons/noBackGround/node-js.svg";
+import java from "../../assets/icons/noBackGround/java.png"
 //? Buttons
 import ButtonGitHub from "../../components/Buttons/GitHubIcon/GitHubIcon";
 import ButtonLinkedin from "../../components/Buttons/LinkedinIcon/LinkedinIcon";
@@ -40,7 +41,7 @@ const ScrollLink = Scroll.Link;
 export default function Index() {
   return (
     <>
-        <NavBar 
+      <NavBar
         to='Home'
         to2="Projects"
         to3="AboutMe"
@@ -49,7 +50,7 @@ export default function Index() {
         value2='Projetos'
         value3='Sobre Mim'
         value4='Fale comigo'
-        />
+      />
       {/*-----Home----*/}
       <main>
         <section className="section-pincipal">
@@ -60,8 +61,8 @@ export default function Index() {
             </div>
             <div className="main-sec1-div2">
               <p className="main-sec1-div2-paragraph">
-                 Olá! Sou Laertes, um desenvolvedor full-stack com sólida experiência
-                 na criação de aplicações web.{" "}
+                Olá! Sou Laertes, um desenvolvedor full-stack com sólida experiência
+                na criação de aplicações web.{" "}
               </p>
             </div>
             <div className="main-sec1-div3">
@@ -95,10 +96,10 @@ export default function Index() {
               <Socket />
             </div>
           </section>
-  {/* //!Remover */}        <span className="box-scroll"> <p className="p-scroll">Scroll</p> <img src={ArrowDown} alt="Seta Para Baixo" className="arrowDown" />
+          {/* //!Remover */}        <span className="box-scroll"> <p className="p-scroll">Scroll</p> <img src={ArrowDown} alt="Seta Para Baixo" className="arrowDown" />
           </span>
         </section>
-           {/* //! Projects   */}
+        {/* //! Projects   */}
         <Element className="projects" name="Projects" id="Projects">
           <div className="projects-container1">
             <h3 className="projects-container1-title">Projetos</h3>
@@ -112,11 +113,11 @@ export default function Index() {
                 icon2={react}
                 icon3={css}
                 icon4={typescript}
-                style={{width: "24px"}}
+                styleIcon4={{ width: "24px" }}
                 alt={""}
                 liveCode='https://github.com/Laertes1/e-commerce'
                 display={'none'}
-                content={<Ecommerce/>}
+                content={<CarrouselEComerce />}
               />
               <Projects
                 projectImage={CalculatorOfGenes}
@@ -125,31 +126,38 @@ export default function Index() {
                 icon1={html}
                 icon2={css}
                 icon3={js}
-                style={{ opacity: "0" }}
+                styleIcon4={{ opacity: "0" }}
                 liveCode='https://github.com/Laertes1/ProjetoLucas.git'
               />
             </div>
 
             <div className="projects-container3-box2">
               <Projects
-                projectImage={Crud}
-                title="Games love"
-                description="Este é um sistema de busca de jogos."
-                icon1={js}
+                content={<CarrouselCep />}
+                title="Buscador de CEP"
+                description="Este é um software java para desktop responsável por realizar buscas de endereço a partir de um CEP, retornando valores como, rua, bairro, cidade e estado. "
+                icon1={java}
                 icon2={react}
                 icon3={css}
                 icon4={nodejs}
-                liveCode='https://github.com/Laertes1/Games-for-love.git'
+                display={'none'}
+                liveCode='https://github.com/Laertes1/busca-de-CEP.git'
+                styleIcon2={{ opacity: "0" }}
+                styleIcon3={{ opacity: "0" }}
+                styleIcon4={{ opacity: "0" }}
               />
-              <Projects
-                projectImage={loading}
-                title="Projeto em construção"
-                description="Tenha calma"
+              <ProjectVideo
+                title="My Condominium"
+                description={"Este projeto visa administrar um condomínio. Ele inclui as páginas de Home, documentos dos funcionários, finanças, relatório de gastos, patrimônio, gastos com segurança e uma página que mostra quem possui lotes nas quadras.  Este site foi criado em conjunto com meu amigo "}
                 icon1={js}
                 icon2={react}
-                icon3={css}
-                style={{ opacity: "0" }}
-              /> 
+                icon3={nodejs}
+                icon4={typescript}
+                styleIcon4={{ width: "24px" }}
+                alt={""}
+                liveCode='https://github.com/Laertes1/My-Condominium.git'
+                content={<VideoCond />}
+              />
             </div>
           </div>
         </Element>
@@ -159,15 +167,15 @@ export default function Index() {
             <h4 className="aboutMe-container1-title">Olá</h4>
             <span className="aboutMe-container1-description">
               <p className="aboutMe-container1-description-text">
-              Olá, sou Laertes, um desenvolvedor full-stack apaixonado com uma
-                 conjunto diversificado de habilidades que se combinam para criar experiências web excepcionais. Com foco especial em React.js, HTML, CSS, JavaScript
-                 Node.js, Typescript e um olhar atento aos detalhes de UI/UX, estou preparado para
-                 transforme suas ideias em interfaces web impressionantes.
+                Olá, sou Laertes, um desenvolvedor full-stack apaixonado com uma
+                conjunto diversificado de habilidades que se combinam para criar experiências web excepcionais. Com foco especial em React.js, HTML, CSS, JavaScript
+                Node.js, Typescript e um olhar atento aos detalhes de UI/UX, estou preparado para
+                transforme suas ideias em interfaces web impressionantes.
               </p>
               <p className="aboutMe-container1-description-text">
-              Estou empenhado em criar soluções digitais que não apenas atendam
-                 necessidades técnicas, mas também se destacam em termos de design e
-                 usabilidade. Entregando código limpo e um site responsivo.
+                Estou empenhado em criar soluções digitais que não apenas atendam
+                necessidades técnicas, mas também se destacam em termos de design e
+                usabilidade. Entregando código limpo e um site responsivo.
               </p>
             </span>
             <Link to="/AboutMe">
