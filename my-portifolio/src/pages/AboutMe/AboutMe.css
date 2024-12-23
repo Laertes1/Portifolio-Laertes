@@ -137,9 +137,8 @@ p {
 }
 .AboutMe-container2-box3-box2-skills.java{
     width:94px;
-    height: 90px;
-    display: flex;
-    align-items: center;
+    height: 89px;
+    margin-bottom: 1px;
 }
 .typeScript{
     margin-top: 2px;
